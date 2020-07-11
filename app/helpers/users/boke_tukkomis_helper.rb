@@ -1,0 +1,2 @@
+module Users::BokeTukkomisHelper
+end

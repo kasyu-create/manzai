@@ -1,0 +1,2 @@
+module Admins::ScriptsHelper
+end
