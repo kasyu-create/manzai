@@ -9,6 +9,7 @@ Rails.application.routes.draw do
 
   namespace :admins do
    root :to => 'top#top'
+   get 'about' => 'top#about'
    resources :users, only: [:index, :show, :edit, :update]
    resources :genres, only: [:index, :create, :edit, :update]
    resources :boke_tukkomis, only: [:show, :index, :new, :create, :edit, :update]
@@ -27,6 +28,7 @@ Rails.application.routes.draw do
    get 'users/edit' => 'users#edit'
    patch 'update' => 'users#update'
    get 'quit' => 'users#quit'
+   resources :scripts, only: [:show, :index, :edit, :update]
   end
 
 
