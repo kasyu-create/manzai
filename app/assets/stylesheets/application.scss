@@ -16,3 +16,8 @@
 
  @import "bootstrap-sprockets";
  @import "bootstrap";
+
+ table {
+   width: 100%;
+   table-layout: fixed;
+ }

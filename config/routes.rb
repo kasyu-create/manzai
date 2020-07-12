@@ -11,7 +11,7 @@ Rails.application.routes.draw do
    root :to => 'top#top'
    get 'about' => 'top#about'
    resources :users, only: [:index, :show, :edit, :update]
-   resources :genres, only: [:index, :create, :edit, :update]
+   resources :genres, only: [:index, :create, :edit, :update, :destroy]
    resources :boke_tukkomis, only: [:show, :index, :new, :create, :edit, :update]
   end
 
@@ -23,6 +23,7 @@ Rails.application.routes.draw do
    registrations: 'users/registrations'
 }
   namespace :users do
+   root :to => 'top#top'
    patch 'users/withdraw' => 'users#withdraw', as: 'users_withdraw'
    get 'show' => 'users#show'
    get 'users/edit' => 'users#edit'
