@@ -7,9 +7,12 @@ Rails.application.routes.draw do
    registrations: 'admins/registrations'
 }
 
+  scope module: 'admins' do
+    root 'top#about'
+   end
+
   namespace :admins do
    root :to => 'top#top'
-   get 'about' => 'top#about'
    resources :users, only: [:index, :show, :edit, :update]
    resources :genres, only: [:index, :create, :edit, :update, :destroy]
    resources :boke_tukkomis, only: [:show, :index, :new, :create, :edit, :update]
@@ -22,6 +25,9 @@ Rails.application.routes.draw do
    passwords:     'users/passwords',
    registrations: 'users/registrations'
 }
+
+
+
   namespace :users do
    root :to => 'top#top'
    patch 'users/withdraw' => 'users#withdraw', as: 'users_withdraw'
