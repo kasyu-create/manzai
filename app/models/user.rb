@@ -7,7 +7,7 @@ class User < ApplicationRecord
   has_many :scripts
 
   def active_for_authentication?
-    super && (self.is_user_status == false)
+    super && (self.is_users_status == true)
   end
 
   validates :last_name,  presence: true
