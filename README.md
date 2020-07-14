@@ -1,24 +1,22 @@
-# README
+# 漫才ネタ作成アプリ
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## サイト概要
+オリジナルの漫才のネタが３分で出来る。漫才ネタ作成アプリ。
+まず、漫才の題材を決め、その題材に沿って物語の展開があります。その展開に沿って、選択肢が与えられて自分で回答する事も出来、選択肢から答える事も出来ます。それを全て答えると漫才の台本が出来ます。
 
-Things you may want to cover:
+### サイトテーマ
+漫才ネタ作成
 
-* Ruby version
+### テーマを選んだ理由
+漫才のネタを作成し易くする為
 
-* System dependencies
+### ターゲットユーザ
+10代〜20代
 
-* Configuration
+### 主な利用シーン
+学園祭　飲み会　クラスの出し物
 
-* Database creation
+## 設計書
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+### 機能一覧
+https://docs.google.com/spreadsheets/d/12SV6yoGA3--hbLoXgCpq7yraq-piqLHpmXfEqaQsOMM/edit#gid=777281316
