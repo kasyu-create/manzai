@@ -36,6 +36,7 @@ Rails.application.routes.draw do
    patch 'update' => 'users#update'
    get 'quit' => 'users#quit'
    resources :scripts, only: [:show, :index, :edit, :update]
+   resources :boke_tukkomis, only: [:show, :index, :edit, :update]
   end
 
 
