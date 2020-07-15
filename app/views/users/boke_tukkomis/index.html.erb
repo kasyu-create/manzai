@@ -1,1 +1,45 @@
 
+<div class="pull-right" style="text-align: right;">
+	<%= search_form_for(@search, url:users_boke_tukkomis_path) do |f| %>
+		<%= f.label :setting, "キーワード" %>
+		<%= f.search_field :setting_cont %>
+		<%= f.submit %>
+	<% end %>
+</div>
+
+<div class="row">
+  <div class="col-xs-10 col-xs-offset-1">
+
+    <h2>題材選択</h2>
+    <h4>下記のリンクから題材を選択しましょう！</h4>
+    <br>
+
+  </div>
+
+  <br>
+    <!-- ofsetは左右の余白 -->
+    <table class="table genre-index">
+      <thead>
+        <tr>
+          <th>ジャンル</th>
+          <th>題材</th>
+        </tr>
+      </thead>
+
+      <tbody>
+
+        <% @genres.each do |genre| %>
+        <% if genre.is_genres_status == true %>
+          <tr>
+            <td><%= genre.name %></td>
+
+            <td><%= link_to genre.setting,users_boke_tukkomi_path(genre) %></td>
+
+          </tr>
+          <% end %>
+          <% end %>
+          <%= paginate @genres %>
+      </tbody>
+    </table>
+</div>
+</div>

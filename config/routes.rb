@@ -32,6 +32,13 @@ Rails.application.routes.draw do
 
   namespace :users do
    root :to => 'top#top'
+   get 'boke_tukkomis/2' => 'boke_tukkomis#show2'
+   get 'boke_tukkomis/3' => 'boke_tukkomis#show3'
+   get 'boke_tukkomis/4' => 'boke_tukkomis#show4'
+   get 'boke_tukkomis/5' => 'boke_tukkomis#show5'
+   get 'boke_tukkomis/6' => 'boke_tukkomis#show6'
+   get 'boke_tukkomis/7' => 'boke_tukkomis#show7'
+   get 'boke_tukkomis/8' => 'boke_tukkomis#show8'
    patch 'users/withdraw' => 'users#withdraw', as: 'users_withdraw'
    get 'show' => 'users#show'
    get 'users/edit' => 'users#edit'
