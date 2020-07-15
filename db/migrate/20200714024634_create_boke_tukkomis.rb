@@ -6,7 +6,6 @@ class CreateBokeTukkomis < ActiveRecord::Migration[5.2]
       t.text :boke
       t.text :tukkomi
       t.integer :page
-      t.string :name
       t.timestamps
     end
   end

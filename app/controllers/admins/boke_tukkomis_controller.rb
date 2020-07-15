@@ -1,8 +1,9 @@
 class Admins::BokeTukkomisController < ApplicationController
 
-  def index
+  def show
     @search = BokeTukkomi.ransack(params[:q])
     @boke_tukkomis = @search.result.page(params[:page]).per(10)
+    @genre = Genre.find(params[:id])
   end
 
   def plan
@@ -25,7 +26,7 @@ class Admins::BokeTukkomisController < ApplicationController
   end
 
 
-  def show
+  def show1
     @boke_tukkomi = BokeTukkomi.find(params[:id])
   end
 
@@ -45,6 +46,7 @@ class Admins::BokeTukkomisController < ApplicationController
 
   private
   def boke_tukkomi_params
-    params.require(:boke_tukkomi).permit(:genre_id, :name, :boke, :tukkomi, :page)
+    params.require(:boke_tukkomi).permit(:genre_id, :boke, :tukkomi, :page)
   end
+
 end

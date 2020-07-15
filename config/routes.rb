@@ -15,9 +15,9 @@ Rails.application.routes.draw do
    root :to => 'top#top'
    resources :users, only: [:index, :show, :edit, :update]
    resources :genres, only: [:index, :create, :edit, :update, :destroy]
-   resources :boke_tukkomis, only: [:show, :index, :new, :create, :edit, :update]
+   resources :boke_tukkomis, only: [:show, :new, :create, :edit, :update]
    get 'plan' => 'boke_tukkomis#plan'
-   get 'scene' => 'boke_tukkomis#scene'
+   get 'show1/:id' => 'boke_tukkomis#show1'
   end
 
 
