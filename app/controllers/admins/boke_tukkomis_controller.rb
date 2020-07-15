@@ -5,6 +5,11 @@ class Admins::BokeTukkomisController < ApplicationController
     @boke_tukkomis = @search.result.page(params[:page]).per(10)
   end
 
+  def plan
+    @search = Genre.ransack(params[:q])
+    @genres = @search.result.page(params[:page]).per(10)
+  end
+
   def new
     @boke_tukkomis = BokeTukkomi.new
   end

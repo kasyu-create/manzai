@@ -10,3 +10,27 @@ Admin.create!(
    email: 'test@test.com',
    password: 'testtest',
 )
+
+Genre.create!(
+   name: '漫才コント',
+   is_genres_status: 'true',
+   setting: 'デート',
+)
+
+Genre.create!(
+   name: '漫才コント',
+   is_genres_status: 'true',
+   setting: '恋愛ドラマ',
+)
+
+Genre.create!(
+   name: '漫才コント',
+   is_genres_status: 'true',
+   setting: '熱血教師',
+)
+
+Genre.create!(
+   name: '漫才コント',
+   is_genres_status: 'true',
+   setting: '刑事ドラマ',
+)

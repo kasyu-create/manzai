@@ -4,6 +4,7 @@ class CreateGenres < ActiveRecord::Migration[5.2]
 
       t.string :name
       t.boolean :is_genres_status, default: true, null: false
+      t.string :setting
       t.timestamps
     end
   end

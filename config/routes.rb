@@ -16,6 +16,8 @@ Rails.application.routes.draw do
    resources :users, only: [:index, :show, :edit, :update]
    resources :genres, only: [:index, :create, :edit, :update, :destroy]
    resources :boke_tukkomis, only: [:show, :index, :new, :create, :edit, :update]
+   get 'plan' => 'boke_tukkomis#plan'
+   get 'scene' => 'boke_tukkomis#scene'
   end
 
 

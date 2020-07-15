@@ -3,7 +3,8 @@ class Admins::GenresController < ApplicationController
 
 def index
   @genre = Genre.new
-  @genres = Genre.page(params[:page]).per(10)
+  @search = Genre.ransack(params[:q])
+  @genres = @search.result.page(params[:page]).per(10)
 end
 
 def create
@@ -39,6 +40,6 @@ end
 
 private
 def genre_params
-  params.require(:genre).permit(:name, :is_genres_status)
+  params.require(:genre).permit(:name, :is_genres_status,:setting)
 end
 end
