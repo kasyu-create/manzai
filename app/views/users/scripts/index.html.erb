@@ -1,0 +1,46 @@
+<div class="row">
+  <div class="col-xs-4">
+      <h2>ネタが完成しました。</h2><br>
+
+      <br>
+      <div class="boke_tukkomi-new-form">
+        <img src="/assets/" width="320" height="320">
+      </div>
+  </div>
+
+      <br><br><br><br>
+      <div class="col-xs-8">
+
+        <%= form_with(model: @BokeTukkomiForm ,url: users_boke_tukkomis_path,local: true) do |f| %>
+          <%=f.hidden_field :page, value:@page %>
+            <%=f.hidden_field :genre_id, value:@genre_id %>
+        <% @boke_tukkomis.each do |boke_tukkomi| %>
+
+        <div class="boke">
+        <%=f.radio_button :boke_tukkomi, {boke: boke_tukkomi.boke, tukkomi: boke_tukkomi.tukkomi}.to_json %>
+        <%=f.label :boke_tukkomi, "#{boke_tukkomi.boke} #{boke_tukkomi.tukkomi}"%>
+        </div>
+
+
+
+        <% end %>
+        <%= f.submit"選択" %>
+        <% end %>
+
+        <p>自由記述</p>
+        <p>ツッコミ</p>
+      </div>
+
+      <br><br>
+      <div class="row">
+        <div class="col-xs-4">
+        </div>
+
+
+        <div class="col-xs-8">
+          <%= link_to "前へ", users_boke_tukkomis_path(@boke_tukkomis), class: "btn btn-success" %>
+          <span>　　</span>
+          <%= link_to "次へ", users_boke_tukkomis_date2_path, class: "btn btn-success" %>
+        </div>
+      </div>
+</div>

@@ -28,16 +28,20 @@
 
       <tbody>
 
-        <% @genres.each do |genre| %>
-        <% if genre.is_genres_status == true %>
           <tr>
-            <td><%= genre.name %></td>
+            <td><%= @genre1.name %></td>
+            <td><%= link_to @genre1.setting,users_boke_tukkomis_date1_path %></td>
 
-            <td><%= link_to genre.setting,users_boke_tukkomi_path(genre) %></td>
+						<td><%= @genre2.name %></td>
+						<td><%= link_to @genre2.setting,users_boke_tukkomi_path(@genre2) %></td>
+
+						<td><%= @genre3.name %></td>
+						<td><%= link_to @genre3.setting,users_boke_tukkomi_path(@genre3) %></td>
+
+						<td><%= @genre4.name %></td>
+						<td><%= link_to @genre4.setting,users_boke_tukkomi_path(@genre4) %></td>
 
           </tr>
-          <% end %>
-          <% end %>
           <%= paginate @genres %>
       </tbody>
     </table>
