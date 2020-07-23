@@ -26,6 +26,7 @@ ActiveRecord::Schema.define(version: 2020_07_20_003136) do
 
   create_table "boke_tukkomis", force: :cascade do |t|
     t.integer "genre_id"
+    t.text "furi"
     t.text "boke"
     t.text "tukkomi"
     t.integer "page"
@@ -50,6 +51,7 @@ ActiveRecord::Schema.define(version: 2020_07_20_003136) do
 
   create_table "user_boke_tukkomis", force: :cascade do |t|
     t.integer "script_id"
+    t.text "furi"
     t.text "boke"
     t.text "tukkomi"
     t.datetime "created_at", null: false
