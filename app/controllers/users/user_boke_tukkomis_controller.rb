@@ -27,7 +27,7 @@ class Users::UserBokeTukkomisController < ApplicationController
 
   def date1
     @userboketukkomi = UserBokeTukkomi.new
-    @boke_tukkomis = BokeTukkomi.where(page: 1, genre_id: 1).select(:boke,:tukkomi).distinct
+    @boke_tukkomis = BokeTukkomi.where(page: 1, genre_id: 1).select(:furi,:boke,:tukkomi).distinct
     @script_id = 1
   end
 
@@ -94,7 +94,7 @@ class Users::UserBokeTukkomisController < ApplicationController
 
     parse_user_boke_tukkomi = params[:user_boke_tukkomi][:user_boke_tukkomi].split(",")
     # parse_user_boke_tukkomi = ""
-    user_boke_tukkomi = UserBokeTukkomi.new(boke: parse_user_boke_tukkomi[0],tukkomi: parse_user_boke_tukkomi[1], script_id: params[:script_id])
+    user_boke_tukkomi = UserBokeTukkomi.new(boke: parse_user_boke_tukkomi[0],tukkomi: parse_user_boke_tukkomi[1], script_id: params[:script_id], furi: params[:furi])
       unless user_boke_tukkomi.save!
         redirect_to users_user_boke_tukkomis_date5_path
       end
@@ -130,7 +130,7 @@ class Users::UserBokeTukkomisController < ApplicationController
 
   private
   def user_boke_tukkomi_params
-    params.permit(:script_id, :boke, :tukkomi)
+    params.permit(:script_id, :furi, :boke, :tukkomi)
   end
 
   def script_params
