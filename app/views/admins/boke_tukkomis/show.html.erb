@@ -1,8 +1,8 @@
 
 <div class="pull-right" style="text-align: right;">
 	<%= search_form_for(@search, url:admins_boke_tukkomis_path) do |f| %>
-		<%= f.label :name, "キーワード" %>
-		<%= f.search_field :name_cont %>
+		<%= f.label :boke, "キーワード" %>
+		<%= f.search_field :boke_cont %>
 		<%= f.submit %>
 	<% end %>
 </div>
