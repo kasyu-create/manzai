@@ -5,7 +5,9 @@ class Users::ScriptsController < ApplicationController
   end
 
   def show
-    @userboketukkomis = UserBokeTukkomi.all.select(:boke,:tukkomi).distinct
+    # @scripts = Script.find(params[:id]).includes(:userboketukkomis)
+    # @userboketukkomis = UserBokeTukkomi.where(script_id: 1).select(:furi,:boke,:tukkomi).distinct
+    # @scripts = Script.where(script_id: 1)
   end
 
   def edit
@@ -13,4 +15,9 @@ class Users::ScriptsController < ApplicationController
 
   def update
   end
+
+  private
+    def scripts_params
+      params.require(:scripts).permit(:user_id, :name)
+    end
 end

@@ -21,6 +21,7 @@
           <tr>
             <th>ストーリーID</th>
             <th>ストーリー名</th>
+						<th>フリ</th>
             <th>ボケ</th>
             <th>ツッコミ</th>
             <th>ページ</th>
@@ -33,6 +34,7 @@
             <tr>
               <td><%= link_to boke_tukkomi.id,admins_path(boke_tukkomi) %></td>
               <td><%= boke_tukkomi.genre.setting %></td>
+							<td><%= boke_tukkomi.furi %></td>
               <td><%= boke_tukkomi.boke %></td>
               <td><%= boke_tukkomi.tukkomi %></td>
               <td><%= boke_tukkomi.page %></td>
