@@ -32,20 +32,22 @@ Rails.application.routes.draw do
 
   namespace :users do
    root :to => 'top#top'
-   get 'boke_tukkomis/2' => 'boke_tukkomis#show2'
-   get 'boke_tukkomis/3' => 'boke_tukkomis#show3'
-   get 'boke_tukkomis/4' => 'boke_tukkomis#show4'
-   get 'boke_tukkomis/5' => 'boke_tukkomis#show5'
-   get 'boke_tukkomis/6' => 'boke_tukkomis#show6'
-   get 'boke_tukkomis/7' => 'boke_tukkomis#show7'
-   get 'boke_tukkomis/8' => 'boke_tukkomis#show8'
+   post 'user_boke_tukkomis/date1' => 'user_boke_tukkomis#create'
+   get 'user_boke_tukkomis/date1' => 'user_boke_tukkomis#date1'
+   post 'user_boke_tukkomis/date2' => 'user_boke_tukkomis#date2'
+   post 'user_boke_tukkomis/date3' => 'user_boke_tukkomis#date3'
+   post 'user_boke_tukkomis/date4' => 'user_boke_tukkomis#date4'
+   post 'user_boke_tukkomis/date5' => 'user_boke_tukkomis#date5'
+   post 'user_boke_tukkomis/date6' => 'user_boke_tukkomis#date6'
+   post 'user_boke_tukkomis/date7' => 'user_boke_tukkomis#date7'
+   post 'user_boke_tukkomis/date8' => 'user_boke_tukkomis#date8'
    patch 'users/withdraw' => 'users#withdraw', as: 'users_withdraw'
    get 'show' => 'users#show'
    get 'users/edit' => 'users#edit'
    patch 'update' => 'users#update'
    get 'quit' => 'users#quit'
    resources :scripts, only: [:show, :index, :edit, :update]
-   resources :boke_tukkomis, only: [:show, :index, :edit, :update]
+   resources :user_boke_tukkomis, only: [:index, :edit, :update, :create]
   end
 
 

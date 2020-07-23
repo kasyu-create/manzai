@@ -1,0 +1,55 @@
+<div class="row">
+  <div class="col-xs-4">
+      <h2>場面１</h2><br>
+
+      <br>
+      <div class="boke_tukkomi-new-form">
+        <img src="/assets/Eb1lrbsXsAEmi2d.jpg" width="320" height="320">
+      </div>
+  </div>
+
+      <br><br><br><br>
+      <div class="col-xs-8">
+        <p>ボケ　　　　デートってどうしたらいいか分からんよな。</p>
+        <p>ツッコミ　　まぁ確かに難しいよな。じゃあ今から俺が男役でデートのやり方教えるわ。</p>
+        <p>ボケ　　　　え、いいの。</p>
+        <p>ツッコミ　　じゃあ車で迎えに行くから待っといて。</p>
+        <p>ツッコミ　　キキー（車のブレーキの音）ごめん、待った？</p><br><br>
+
+        <%= form_with(model: @userboketukkomi ,url: users_user_boke_tukkomis_date2_path,method: :post, local: true) do |f| %>
+
+        <% @boke_tukkomis.each do |boke_tukkomi| %>
+
+
+        <%=f.hidden_field :script_id, value:@script_id %>
+
+        <div class="boke">
+         <%=f.radio_button :user_boke_tukkomi, boke_tukkomi.boke + "," + boke_tukkomi.tukkomi %>
+        <!-- モデル名であるboke_tukkomiをシンボルの書き方で、持って来ている。このboke_tukkomiはcontrollerの方でwhere構文で絞っている。ボケ、ツッコミをシンボルでそれぞれ行い、さらにそれをto.jsonでシンボル化している。
+        ここで疑問なのは、{}でなぜ括る必要があるのかと、シンボルになっているのにわざわざもう一度.to_jsonする必要はあるのか。 -->
+
+        <%=f.label :boke_tukkomi, "#{boke_tukkomi.boke} #{boke_tukkomi.tukkomi}"%>
+        <!-- ここが"#{}"で書く必要があるのか分からない -->
+        </div>
+
+
+
+        <% end %>
+        <%= f.submit"選択" %>
+        <% end %>
+
+        <p>自由記述</p>
+        <p>ツッコミ</p>
+      </div>
+
+      <br><br>
+      <div class="row">
+        <div class="col-xs-4">
+        </div>
+
+
+        <div class="col-xs-8">
+
+        </div>
+      </div>
+</div>
