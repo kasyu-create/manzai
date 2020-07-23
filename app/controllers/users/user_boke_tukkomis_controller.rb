@@ -33,12 +33,12 @@ class Users::UserBokeTukkomisController < ApplicationController
 
   def date2
     @userboketukkomi = UserBokeTukkomi.new
-    @boke_tukkomis = BokeTukkomi.where(page: 2, genre_id: 1).select(:boke,:tukkomi).distinct
+    @boke_tukkomis = BokeTukkomi.where(page: 2, genre_id: 1).select(:furi, :boke,:tukkomi).distinct
     @script_id = 1
 
     parse_user_boke_tukkomi = params[:user_boke_tukkomi][:user_boke_tukkomi].split(",")
     # parse_user_boke_tukkomi = ""
-    user_boke_tukkomi = UserBokeTukkomi.new(boke: parse_user_boke_tukkomi[0],tukkomi: parse_user_boke_tukkomi[1], script_id: params[:script_id])
+    user_boke_tukkomi = UserBokeTukkomi.new(boke: parse_user_boke_tukkomi[0],tukkomi: parse_user_boke_tukkomi[1], script_id: params[:user_boke_tukkomi][:script_id], furi: params[:user_boke_tukkomi][:furi])
       unless user_boke_tukkomi.save!
         redirect_to users_user_boke_tukkomis_date1_path
       end
@@ -47,12 +47,12 @@ class Users::UserBokeTukkomisController < ApplicationController
   def date3
     @userboketukkomi = UserBokeTukkomi.new
     @boke_tukkomis = BokeTukkomi.new
-    @boke_tukkomis = BokeTukkomi.where(page: 3, genre_id: 1).select(:boke,:tukkomi).distinct
+    @boke_tukkomis = BokeTukkomi.where(page: 3, genre_id: 1).select(:furi, :boke,:tukkomi).distinct
     @script_id = 1
 
     parse_user_boke_tukkomi = params[:user_boke_tukkomi][:user_boke_tukkomi].split(",")
     # parse_user_boke_tukkomi = ""
-    user_boke_tukkomi = UserBokeTukkomi.new(boke: parse_user_boke_tukkomi[0],tukkomi: parse_user_boke_tukkomi[1], script_id: params[:script_id])
+    user_boke_tukkomi = UserBokeTukkomi.new(boke: parse_user_boke_tukkomi[0],tukkomi: parse_user_boke_tukkomi[1], script_id: params[:user_boke_tukkomi][:script_id], furi: params[:user_boke_tukkomi][:furi])
       unless user_boke_tukkomi.save!
         redirect_to users_user_boke_tukkomis_date2_path
       end
@@ -61,12 +61,12 @@ class Users::UserBokeTukkomisController < ApplicationController
   def date4
     @userboketukkomi = UserBokeTukkomi.new
     @boke_tukkomis = BokeTukkomi.new
-    @boke_tukkomis = BokeTukkomi.where(page: 4, genre_id: 1).select(:boke,:tukkomi).distinct
+    @boke_tukkomis = BokeTukkomi.where(page: 4, genre_id: 1).select(:furi,:boke,:tukkomi).distinct
     @script_id = 1
 
     parse_user_boke_tukkomi = params[:user_boke_tukkomi][:user_boke_tukkomi].split(",")
     # parse_user_boke_tukkomi = ""
-    user_boke_tukkomi = UserBokeTukkomi.new(boke: parse_user_boke_tukkomi[0],tukkomi: parse_user_boke_tukkomi[1], script_id: params[:script_id])
+    user_boke_tukkomi = UserBokeTukkomi.new(boke: parse_user_boke_tukkomi[0],tukkomi: parse_user_boke_tukkomi[1], script_id: params[:user_boke_tukkomi][:script_id], furi: params[:user_boke_tukkomi][:furi])
       unless user_boke_tukkomi.save!
         redirect_to users_user_boke_tukkomis_date3_path
       end
@@ -75,12 +75,12 @@ class Users::UserBokeTukkomisController < ApplicationController
   def date5
     @userboketukkomi = UserBokeTukkomi.new
     @boke_tukkomis = BokeTukkomi.new
-    @boke_tukkomis = BokeTukkomi.where(page: 5, genre_id: 1).select(:boke,:tukkomi).distinct
+    @boke_tukkomis = BokeTukkomi.where(page: 5, genre_id: 1).select(:furi,:boke,:tukkomi).distinct
     @script_id = 1
 
     parse_user_boke_tukkomi = params[:user_boke_tukkomi][:user_boke_tukkomi].split(",")
     # parse_user_boke_tukkomi = ""
-    user_boke_tukkomi = UserBokeTukkomi.new(boke: parse_user_boke_tukkomi[0],tukkomi: parse_user_boke_tukkomi[1], script_id: params[:script_id])
+    user_boke_tukkomi = UserBokeTukkomi.new(boke: parse_user_boke_tukkomi[0],tukkomi: parse_user_boke_tukkomi[1], script_id: params[:user_boke_tukkomi][:script_id], furi: params[:user_boke_tukkomi][:furi])
       unless user_boke_tukkomi.save!
         redirect_to users_user_boke_tukkomis_date4_path
       end
@@ -89,12 +89,12 @@ class Users::UserBokeTukkomisController < ApplicationController
   def date6
     @userboketukkomi = UserBokeTukkomi.new
     @boke_tukkomis = BokeTukkomi. new
-    @boke_tukkomis = BokeTukkomi.where(page: 6, genre_id: 1).select(:boke,:tukkomi).distinct
+    @boke_tukkomis = BokeTukkomi.where(page: 6, genre_id: 1).select(:furi,:boke,:tukkomi).distinct
     @script_id = 1
 
     parse_user_boke_tukkomi = params[:user_boke_tukkomi][:user_boke_tukkomi].split(",")
     # parse_user_boke_tukkomi = ""
-    user_boke_tukkomi = UserBokeTukkomi.new(boke: parse_user_boke_tukkomi[0],tukkomi: parse_user_boke_tukkomi[1], script_id: params[:script_id], furi: params[:furi])
+    user_boke_tukkomi = UserBokeTukkomi.new(boke: parse_user_boke_tukkomi[0],tukkomi: parse_user_boke_tukkomi[1], script_id: params[:user_boke_tukkomi][:script_id], furi: params[:user_boke_tukkomi][:furi])
       unless user_boke_tukkomi.save!
         redirect_to users_user_boke_tukkomis_date5_path
       end
@@ -103,12 +103,12 @@ class Users::UserBokeTukkomisController < ApplicationController
   def date7
     @userboketukkomi = UserBokeTukkomi.new
     @boke_tukkomis = BokeTukkomi.new
-    @boke_tukkomis = BokeTukkomi.where(page: 7, genre_id: 1).select(:boke,:tukkomi).distinct
+    @boke_tukkomis = BokeTukkomi.where(page: 7, genre_id: 1).select(:furi,:boke,:tukkomi).distinct
     @script_id = 1
 
     parse_user_boke_tukkomi = params[:user_boke_tukkomi][:user_boke_tukkomi].split(",")
     # parse_user_boke_tukkomi = ""
-    user_boke_tukkomi = UserBokeTukkomi.new(boke: parse_user_boke_tukkomi[0],tukkomi: parse_user_boke_tukkomi[1], script_id: params[:script_id])
+    user_boke_tukkomi = UserBokeTukkomi.new(boke: parse_user_boke_tukkomi[0],tukkomi: parse_user_boke_tukkomi[1], script_id: params[:user_boke_tukkomi][:script_id], furi: params[:user_boke_tukkomi][:furi])
       unless user_boke_tukkomi.save!
         redirect_to users_user_boke_tukkomis_date6_path
       end
@@ -117,12 +117,12 @@ class Users::UserBokeTukkomisController < ApplicationController
   def date8
     @userboketukkomi = UserBokeTukkomi.new
     @boke_tukkomis = BokeTukkomi.new
-    @boke_tukkomis = BokeTukkomi.where(page: 8, genre_id: 1).select(:boke,:tukkomi).distinct
+    @boke_tukkomis = BokeTukkomi.where(page: 8, genre_id: 1).select(:furi,:boke,:tukkomi).distinct
     @script_id = 1
 
     parse_user_boke_tukkomi = params[:user_boke_tukkomi][:user_boke_tukkomi].split(",")
     # parse_user_boke_tukkomi = ""
-    user_boke_tukkomi = UserBokeTukkomi.new(boke: parse_user_boke_tukkomi[0],tukkomi: parse_user_boke_tukkomi[1], script_id: params[:script_id])
+    user_boke_tukkomi = UserBokeTukkomi.new(boke: parse_user_boke_tukkomi[0],tukkomi: parse_user_boke_tukkomi[1], script_id: params[:user_boke_tukkomi][:script_id], furi: params[:user_boke_tukkomi][:furi])
       unless user_boke_tukkomi.save!
         redirect_to users_user_boke_tukkomis_date7_path
       end
