@@ -5,7 +5,7 @@ class Users::ScriptsController < ApplicationController
   end
 
   def show
-    @scripts = Script.find(params[:id]).includes(:userboketukkomis)
+    # @scripts = Script.find(params[:id]).includes(:userboketukkomis)
     # @userboketukkomis = UserBokeTukkomi.where(script_id: 1).select(:furi,:boke,:tukkomi).distinct
     # @scripts = Script.where(script_id: 1)
   end
