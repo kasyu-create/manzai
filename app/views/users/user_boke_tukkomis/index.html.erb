@@ -1,0 +1,57 @@
+
+
+<div class="row">
+  <div class="col-xs-10 col-xs-offset-1">
+
+    <h2>題材選択</h2>
+    <h4>下記のリンクから題材を選択しましょう！</h4>
+    <br>
+
+  </div>
+
+  <br>
+    <!-- ofsetは左右の余白 -->
+    <table class="table genre-index">
+      <thead>
+        <tr>
+          <th>ジャンル</th>
+          <th>題材</th>
+        </tr>
+      </thead>
+
+      <tbody>
+				<%= form_with(method: :post, model: @script ,url: users_user_boke_tukkomis_date1_path,local: true) do |f| %>
+
+          <tr>
+            <td><%= @genre1.name %></td>
+            <td><%= @genre1.setting %></td>
+            <%= f.label :name %>
+            <td><%= f.text_field :name, :value => @genre1.setting %></td>
+            <!-- <%=f.hidden_field :name, :value => @genre1.setting %> -->
+            <td><%= f.submit %></td>
+            <% end %>
+          </tr>
+
+
+
+					<tr>
+						<td><%= @genre2.name %></td>
+						<td><%= @genre2.setting %></td>
+					</tr>
+
+					<tr>
+						<td><%= @genre3.name %></td>
+						<td><%= @genre3.setting %></td>
+					</tr>
+
+					<tr>
+						<td><%= @genre4.name %></td>
+						<td><%= @genre4.setting %></td>
+					</tr>
+
+      </tbody>
+    </table>
+
+
+</div>
+</div>

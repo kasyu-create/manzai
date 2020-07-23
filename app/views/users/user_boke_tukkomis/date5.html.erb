@@ -1,0 +1,49 @@
+<div class="row">
+  <div class="col-xs-4">
+      <h2>場面５</h2><br>
+
+      <br>
+      <div class="boke_tukkomi-new-form">
+        <img src="/assets/ダウンロード (2).jpeg" width="320" height="320">
+      </div>
+  </div>
+
+      <br><br><br><br>
+      <div class="col-xs-8">
+        <p>ツッコミ　　そしたら２人レストランの席に座ったら綺麗な夜景が広がってるわけや。</p><br><br>
+
+        <%= form_with(model: @userboketukkomi ,url: users_user_boke_tukkomis_date6_path,method: :post, local: true) do |f| %>
+
+        <% @boke_tukkomis.each do |boke_tukkomi| %>
+
+
+        <%=f.hidden_field :script_id, value:@script_id %>
+
+        <div class="boke">
+         <%=f.radio_button :user_boke_tukkomi, boke_tukkomi.boke + "," + boke_tukkomi.tukkomi %>
+
+        <%=f.label :boke_tukkomi, "#{boke_tukkomi.boke} #{boke_tukkomi.tukkomi}"%>
+        <!-- ここが"#{}"で書く必要があるのか分からない -->
+        </div>
+
+
+
+        <% end %>
+        <%= f.submit"選択" %>
+        <% end %>
+
+        <p>自由記述</p>
+        <p>ツッコミ</p>
+      </div>
+
+      <br><br>
+      <div class="row">
+        <div class="col-xs-4">
+        </div>
+
+
+        <div class="col-xs-8">
+
+        </div>
+      </div>
+</div>

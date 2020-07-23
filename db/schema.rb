@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_07_14_024634) do
+ActiveRecord::Schema.define(version: 2020_07_20_003136) do
 
   create_table "admins", force: :cascade do |t|
     t.string "email", default: "", null: false
@@ -29,7 +29,6 @@ ActiveRecord::Schema.define(version: 2020_07_14_024634) do
     t.text "boke"
     t.text "tukkomi"
     t.integer "page"
-    t.string "name"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -45,7 +44,14 @@ ActiveRecord::Schema.define(version: 2020_07_14_024634) do
   create_table "scripts", force: :cascade do |t|
     t.integer "user_id"
     t.string "name"
-    t.text "boke_tukkomi"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "user_boke_tukkomis", force: :cascade do |t|
+    t.integer "script_id"
+    t.text "boke"
+    t.text "tukkomi"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
