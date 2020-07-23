@@ -5,6 +5,7 @@ class Users::ScriptsController < ApplicationController
   end
 
   def show
+    @userboketukkomis = UserBokeTukkomi.all.select(:boke,:tukkomi).distinct
   end
 
   def edit
