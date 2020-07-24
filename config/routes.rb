@@ -46,6 +46,7 @@ Rails.application.routes.draw do
    get 'users/edit' => 'users#edit'
    patch 'update' => 'users#update'
    get 'quit' => 'users#quit'
+   get 'users/scripts/:id/:id' => 'scripts#edit1'
    resources :scripts, only: [:show, :index, :edit, :update]
    resources :user_boke_tukkomis, only: [:index, :edit, :update, :create]
   end
