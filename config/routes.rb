@@ -31,7 +31,7 @@ Rails.application.routes.draw do
 
 
   namespace :users do
-   root :to => 'top#top'
+   root :to => 'user_boke_tukkomis#index'
    post 'user_boke_tukkomis/date1' => 'user_boke_tukkomis#create'
    get 'user_boke_tukkomis/date1' => 'user_boke_tukkomis#date1'
    post 'user_boke_tukkomis/date2' => 'user_boke_tukkomis#date2'
@@ -47,8 +47,8 @@ Rails.application.routes.draw do
    patch 'update' => 'users#update'
    get 'quit' => 'users#quit'
    get 'users/scripts/:id/:id' => 'scripts#edit1'
-   resources :scripts, only: [:show, :index, :edit, :update]
-   resources :user_boke_tukkomis, only: [:index, :edit, :update, :create]
+   resources :scripts, only: [:show, :index, :edit, :update, :destroy]
+   resources :user_boke_tukkomis, only: [:index, :show, :edit, :update, :create]
   end
 
 

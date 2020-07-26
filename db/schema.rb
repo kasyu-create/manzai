@@ -35,9 +35,9 @@ ActiveRecord::Schema.define(version: 2020_07_20_003136) do
   end
 
   create_table "genres", force: :cascade do |t|
-    t.string "name"
+    t.string "genre"
     t.boolean "is_genres_status", default: true, null: false
-    t.string "setting"
+    t.string "name"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -45,6 +45,7 @@ ActiveRecord::Schema.define(version: 2020_07_20_003136) do
   create_table "scripts", force: :cascade do |t|
     t.integer "user_id"
     t.string "name"
+    t.text "furiboketukkomi"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
