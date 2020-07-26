@@ -18,7 +18,7 @@
         <br>
         <p>下記にボケの選択肢があります！ボタンを選択して次へを押してください！</p>
         <br><br>
-        <%= form_with(model: @userboketukkomi ,url: users_user_boke_tukkomis_date2_path,method: :post, local: true) do |f| %>
+        <%= form_with(model: @userboketukkomi ,url: users_user_boke_tukkomis_date2_path(@script_id),method: :post, local: true) do |f| %>
 
         <%=f.hidden_field :furi, value: @boke_tukkomis.last.furi %>
 

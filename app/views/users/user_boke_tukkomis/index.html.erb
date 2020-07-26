@@ -20,33 +20,13 @@
       </thead>
 
       <tbody>
-				<%= form_with(method: :post, model: @script ,url: users_user_boke_tukkomis_date1_path,local: true) do |f| %>
+        <% @genres.each do |genres| %>
 
           <tr>
-            <td><%= @genre1.name %></td>
-            <%= f.label :name %>
-            <td><%= f.text_field :name, :value => @genre1.setting %></td>
-            <!-- <%=f.hidden_field :name, :value => @genre1.setting %> -->
-            <td><%= f.submit %></td>
-            <% end %>
+            <td><%= genres.genre %></td>
+            <td><%= link_to genres.name, users_user_boke_tukkomi_path(genres.id) %></td>
           </tr>
-
-
-
-					<tr>
-						<td><%= @genre2.name %></td>
-						<td><%= @genre2.setting %></td>
-					</tr>
-
-					<tr>
-						<td><%= @genre3.name %></td>
-						<td><%= @genre3.setting %></td>
-					</tr>
-
-					<tr>
-						<td><%= @genre4.name %></td>
-						<td><%= @genre4.setting %></td>
-					</tr>
+          <% end %>
 
       </tbody>
     </table>
