@@ -5,12 +5,12 @@ class Users::UserBokeTukkomisController < ApplicationController
   end
 
   def show
-    genre = Genre.find(params[:id])
+    @genre = Genre.find(params[:id])
     @script = Script.new
-    @script.name = genre.name
+    @script.name = @genre.name
     @script.user_id = current_user.id
     if @script.save
-      redirect_to users_user_boke_tukkomis_date1_path(@script)
+      redirect_to users_user_boke_tukkomis_date1_path(script_id: @script.id, genre_id: @genre.id )
       # ここに引数で@scriptでscriptIDを渡せれば
     else
       redirect_to users_user_boke_tukkomis_path
@@ -31,16 +31,19 @@ class Users::UserBokeTukkomisController < ApplicationController
   #   @b_ts[index]
   # end
 
+#  /users/genres/:genre_id/user_boke_tukkomis/date1(.:format)
   def date1
     @userboketukkomi = UserBokeTukkomi.new
-    @boke_tukkomis = BokeTukkomi.where(page: 1, genre_id: 1).select(:furi,:boke,:tukkomi).distinct
-    @script_id = params[:format]
+    @boke_tukkomis = BokeTukkomi.where(page: 1, genre_id: params[:genre_id]).select(:furi,:boke,:tukkomi).distinct
+    @script_id = params[:script_id]
+    @genre_id = params[:genre_id]
   end
 
   def date2
     @userboketukkomi = UserBokeTukkomi.new
-    @boke_tukkomis = BokeTukkomi.where(page: 2, genre_id: 1).select(:furi, :boke,:tukkomi).distinct
+    @boke_tukkomis = BokeTukkomi.where(page: 2, genre_id: params[:genre_id]).select(:furi, :boke,:tukkomi).distinct
     @script_id = params[:user_boke_tukkomi][:script_id]
+    @genre_id = params[:genre_id]
 
     parse_user_boke_tukkomi = params[:user_boke_tukkomi][:user_boke_tukkomi].split(",")
     # parse_user_boke_tukkomi = ""
@@ -53,8 +56,9 @@ class Users::UserBokeTukkomisController < ApplicationController
   def date3
     @userboketukkomi = UserBokeTukkomi.new
     @boke_tukkomis = BokeTukkomi.new
-    @boke_tukkomis = BokeTukkomi.where(page: 3, genre_id: 1).select(:furi, :boke,:tukkomi).distinct
+    @boke_tukkomis = BokeTukkomi.where(page: 3, genre_id: params[:genre_id]).select(:furi, :boke,:tukkomi).distinct
     @script_id = params[:user_boke_tukkomi][:script_id]
+    @genre_id = params[:genre_id]
 
     parse_user_boke_tukkomi = params[:user_boke_tukkomi][:user_boke_tukkomi].split(",")
     # parse_user_boke_tukkomi = ""
@@ -67,8 +71,9 @@ class Users::UserBokeTukkomisController < ApplicationController
   def date4
     @userboketukkomi = UserBokeTukkomi.new
     @boke_tukkomis = BokeTukkomi.new
-    @boke_tukkomis = BokeTukkomi.where(page: 4, genre_id: 1).select(:furi,:boke,:tukkomi).distinct
+    @boke_tukkomis = BokeTukkomi.where(page: 4, genre_id: params[:genre_id]).select(:furi,:boke,:tukkomi).distinct
     @script_id = params[:user_boke_tukkomi][:script_id]
+    @genre_id = params[:genre_id]
 
     parse_user_boke_tukkomi = params[:user_boke_tukkomi][:user_boke_tukkomi].split(",")
     # parse_user_boke_tukkomi = ""
@@ -81,8 +86,9 @@ class Users::UserBokeTukkomisController < ApplicationController
   def date5
     @userboketukkomi = UserBokeTukkomi.new
     @boke_tukkomis = BokeTukkomi.new
-    @boke_tukkomis = BokeTukkomi.where(page: 5, genre_id: 1).select(:furi,:boke,:tukkomi).distinct
+    @boke_tukkomis = BokeTukkomi.where(page: 5, genre_id: params[:genre_id]).select(:furi,:boke,:tukkomi).distinct
     @script_id = params[:user_boke_tukkomi][:script_id]
+    @genre_id = params[:genre_id]
 
     parse_user_boke_tukkomi = params[:user_boke_tukkomi][:user_boke_tukkomi].split(",")
     # parse_user_boke_tukkomi = ""
@@ -95,8 +101,9 @@ class Users::UserBokeTukkomisController < ApplicationController
   def date6
     @userboketukkomi = UserBokeTukkomi.new
     @boke_tukkomis = BokeTukkomi. new
-    @boke_tukkomis = BokeTukkomi.where(page: 6, genre_id: 1).select(:furi,:boke,:tukkomi).distinct
+    @boke_tukkomis = BokeTukkomi.where(page: 6, genre_id: params[:genre_id]).select(:furi,:boke,:tukkomi).distinct
     @script_id = params[:user_boke_tukkomi][:script_id]
+    @genre_id = params[:genre_id]
 
     parse_user_boke_tukkomi = params[:user_boke_tukkomi][:user_boke_tukkomi].split(",")
     # parse_user_boke_tukkomi = ""
@@ -109,8 +116,9 @@ class Users::UserBokeTukkomisController < ApplicationController
   def date7
     @userboketukkomi = UserBokeTukkomi.new
     @boke_tukkomis = BokeTukkomi.new
-    @boke_tukkomis = BokeTukkomi.where(page: 7, genre_id: 1).select(:furi,:boke,:tukkomi).distinct
+    @boke_tukkomis = BokeTukkomi.where(page: 7, genre_id: params[:genre_id]).select(:furi,:boke,:tukkomi).distinct
     @script_id = params[:user_boke_tukkomi][:script_id]
+    @genre_id = params[:genre_id]
 
     parse_user_boke_tukkomi = params[:user_boke_tukkomi][:user_boke_tukkomi].split(",")
     # parse_user_boke_tukkomi = ""
@@ -126,8 +134,9 @@ class Users::UserBokeTukkomisController < ApplicationController
     logger.debug 'zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz'
     @userboketukkomi = UserBokeTukkomi.new
     @boke_tukkomis = BokeTukkomi.new
-    @boke_tukkomis = BokeTukkomi.where(page: 8, genre_id: 1).select(:furi,:boke,:tukkomi).distinct
+    @boke_tukkomis = BokeTukkomi.where(page: 8, genre_id: params[:genre_id]).select(:furi,:boke,:tukkomi).distinct
     @script_id = params[:user_boke_tukkomi][:script_id]
+    @genre_id = params[:genre_id]
 
     parse_user_boke_tukkomi = params[:user_boke_tukkomi][:user_boke_tukkomi].split(",")
     # parse_user_boke_tukkomi = ""
