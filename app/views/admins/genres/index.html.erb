@@ -1,7 +1,7 @@
 <div class="pull-right" style="text-align: right;">
 	<%= search_form_for(@search, url:admins_genres_path) do |f| %>
-		<%= f.label :setting, "キーワード" %>
-		<%= f.search_field :setting_cont %>
+		<%= f.label :name, "キーワード" %>
+		<%= f.search_field :name_cont %>
 		<%= f.submit %>
 	<% end %>
 </div>
@@ -65,7 +65,7 @@
               <% end %>
             </td>
             <td><%= genres.name %></td>
-            <td><%= link_to "編集する", edit_admins_genre_path(genre), class: "btn btn-primary" %></td>
+            <td><%= link_to "編集する", edit_admins_genre_path(genres), class: "btn btn-primary" %></td>
             <td><%= link_to "削除する", admins_genre_path(genres), method: :delete, class: "btn btn-primary" %></td>
           </tr>
           <% end %>

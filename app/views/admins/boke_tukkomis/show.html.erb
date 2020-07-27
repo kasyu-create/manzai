@@ -30,10 +30,10 @@
 
         <tbody>
           <% @boke_tukkomis.each do |boke_tukkomi| %>
-					<% if @genre.setting == boke_tukkomi.genre.setting %>
+					<% if @genre.name == boke_tukkomi.genre.name %>
             <tr>
               <td><%= link_to boke_tukkomi.id,admins_path(boke_tukkomi) %></td>
-              <td><%= boke_tukkomi.genre.setting %></td>
+              <td><%= boke_tukkomi.genre.name %></td>
 							<td><%= boke_tukkomi.furi %></td>
               <td><%= boke_tukkomi.boke %></td>
               <td><%= boke_tukkomi.tukkomi %></td>
