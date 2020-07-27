@@ -10,23 +10,20 @@
 
       <br><br><br><br>
       <div class="col-xs-8">
-        <p>　　そしたら最後に次のデートの約束するねん。映画のチケットが２枚あるんだけど良かったらどうかな？</p>
-        <br><br>
-        <br>
         <p>下記にボケの選択肢があります！ボタンを選択して次へを押してください！</p>
         <br><br>
 
-        <%= form_with(model: @userboketukkomi ,url: users_user_boke_tukkomis_date8_path,method: :post, local: true) do |f| %>
+        <%= form_with(model: @userboketukkomi ,url: users_user_boke_tukkomis_date8_path(script_id: @script_id, genre_id: @genre_id),method: :post, local: true) do |f| %>
 
         <%=f.hidden_field :furi, value: @boke_tukkomis.last.furi %>
+        <p><%= @boke_tukkomis.last.furi %></p>
+        <br><br>
 
         <% @boke_tukkomis.each do |boke_tukkomi| %>
-
 
         <%=f.hidden_field :script_id, value:@script_id %>
 
         <div class="boke">
-
          <%=f.radio_button :user_boke_tukkomi, boke_tukkomi.boke + "," + boke_tukkomi.tukkomi %>
 
         <%=f.label :boke_tukkomi, "#{boke_tukkomi.boke} #{boke_tukkomi.tukkomi}"%>
@@ -38,9 +35,6 @@
         <% end %>
         <%= f.submit"選択" %>
         <% end %>
-
-        <p>自由記述</p>
-        <p>ツッコミ</p>
       </div>
 
       <br><br>
@@ -50,7 +44,7 @@
 
 
         <div class="col-xs-8">
-          <%= link_to "完成", users_scripts_path, class: "btn btn-success" %>
+
         </div>
       </div>
 </div>
