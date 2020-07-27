@@ -1,7 +1,7 @@
 <div class="pull-right" style="text-align: right;">
 	<%= search_form_for(@search, url:admins_plan_path) do |f| %>
-		<%= f.label :setting, "キーワード" %>
-		<%= f.search_field :setting_cont %>
+		<%= f.label :name, "キーワード" %>
+		<%= f.search_field :name_cont %>
 		<%= f.submit %>
 	<% end %>
 </div>
@@ -25,12 +25,12 @@
 
       <tbody>
 
-        <% @genres.each do |genre| %>
-        <% if genre.is_genres_status == true %>
+        <% @genres.each do |genres| %>
+        <% if genres.is_genres_status == true %>
           <tr>
-            <td><%= genre.name %></td>
+            <td><%= genres.genre %></td>
 
-            <td><%= link_to genre.setting,admins_boke_tukkomi_path(genre) %></td>
+            <td><%= link_to genres.name,admins_boke_tukkomi_path(genres) %></td>
 
           </tr>
           <% end %>
