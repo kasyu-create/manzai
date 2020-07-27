@@ -16,7 +16,7 @@
 
     <div class="col-xs-4">
       <%= f.label :ジャンル %>
-      <%= f.text_field :genre %>
+      <%= f.text_field :gen %>
     </div>
 
     <div class="col-xs-4">
@@ -56,7 +56,7 @@
       <tbody>
         <% @genres.each do |genres| %>
           <tr>
-            <td><%= genres.genre %></td>
+            <td><%= genres.gen %></td>
             <td>
               <% if genres.is_genres_status %>
               有効
