@@ -21,25 +21,25 @@ User.create!(
 )
 
 Genre.create!(
-   genre: '漫才コント',
+   gen: '漫才コント',
    is_genres_status: 'true',
    name: 'デート',
 )
 
 Genre.create!(
-   genre: '漫才コント',
+   gen: '漫才コント',
    is_genres_status: 'true',
    name: '恋愛ドラマ',
 )
 
 Genre.create!(
-   genre: '漫才コント',
+   gen: '漫才コント',
    is_genres_status: 'true',
    name: '熱血教師',
 )
 
 Genre.create!(
-   genre: '漫才コント',
+   gen: '漫才コント',
    is_genres_status: 'true',
    name: '刑事ドラマ',
 )
