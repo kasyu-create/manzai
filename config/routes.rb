@@ -7,8 +7,8 @@ Rails.application.routes.draw do
    registrations: 'admins/registrations'
 }
 
-  scope module: 'admins' do
-    root 'top#about'
+  scope module: 'users' do
+    root 'top#top'
    end
 
   namespace :admins do
@@ -46,6 +46,7 @@ Rails.application.routes.draw do
    get 'users/edit' => 'users#edit'
    patch 'update' => 'users#update'
    get 'quit' => 'users#quit'
+   get 'about' => 'users#about'
    get 'users/scripts/:id/:id' => 'scripts#edit1'
    resources :scripts, only: [:show, :index, :edit, :update, :destroy]
    resources :user_boke_tukkomis, only: [:index, :show, :edit, :update, :create]

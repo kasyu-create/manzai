@@ -11,6 +11,9 @@ class Users::UsersController < ApplicationController
     @user = current_user
   end
 
+  def about
+  end
+
   # 登録情報の編集を保存するアクション
   def update
     @user = current_user
