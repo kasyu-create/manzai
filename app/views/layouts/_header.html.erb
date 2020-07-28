@@ -21,7 +21,7 @@
           <li><%= link_to "ネタ一覧", users_scripts_path, style: "font-family: HiraMinPro-W6; color: #000000;" %></li>
           <li style="font-family: Osaka; margin-top: 15px; color: #696969;">|</li>
 
-          <li><%= link_to "About", root_path, style: "font-family: HiraMinPro-W6; color: #000000;" %></li>
+          <li><%= link_to "About", users_about_path, style: "font-family: HiraMinPro-W6; color: #000000;" %></li>
           <li style="font-family: Osaka; margin-top: 15px; color: #696969;">|</li>
 
           <li><%= link_to "ログアウト", destroy_user_session_path, method: :delete, style: "font-family: HiraMinPro-W6; color: #000000;" %></li>
@@ -39,7 +39,7 @@
           <li><%= link_to "ジャンル一覧", admins_genres_path, style: "font-family: HiraMinPro-W6; color: #000000;" %></li>
           <li style="font-family: Osaka; margin-top: 15px; color: #696969;">|</li>
 
-          <li><%= link_to "About", root_path, style: "font-family: HiraMinPro-W6; color: #000000;" %></li>
+          <li><%= link_to "About", users_about_path, style: "font-family: HiraMinPro-W6; color: #000000;" %></li>
 
           <li style="font-family: Osaka; margin-top: 15px; color: #696969;">|</li>
           <li><%= link_to "ログアウト", destroy_admin_session_path, method: :delete %></li>
@@ -47,9 +47,6 @@
         <% else %>
           <!-- ログインしていない時 -->
           <li><%= link_to "新規登録", new_user_registration_path, style: "font-family: HiraMinPro-W6; color: #000000;" %></li>
-          <li style="font-family: Osaka; margin-top: 15px; color: #696969;">|</li>
-
-          <li><%= link_to "About", root_path, style: "font-family: HiraMinPro-W6; color: #000000;" %></li>
           <li style="font-family: Osaka; margin-top: 15px; color: #696969;">|</li>
 
           <li><%= link_to "ログイン", new_user_session_path, style: "font-family: HiraMinPro-W6; color: #000000;" %></li>
