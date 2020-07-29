@@ -21,12 +21,12 @@ rails s -b 0.0.0.0
 学園祭　飲み会　クラスの出し物
 
 ## 作者
-東野　陽生:Twitter
+東野　陽生:Twitter https://twitter.com/m75cCMbYv5LEsO8
 mail to: ntthigashino@icloud.com
 
 ### 機能一覧
 https://docs.google.com/spreadsheets/d/12SV6yoGA3--hbLoXgCpq7yraq-piqLHpmXfEqaQsOMM/edit#gid=777281316
 
-## ライセンス
+### ライセンス
 This project is licensed free.
 ご自由にご利用ください
