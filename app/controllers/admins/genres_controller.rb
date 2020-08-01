@@ -40,6 +40,6 @@ end
 
 private
 def genre_params
-  params.require(:genre).permit(:name, :is_genres_status,:setting)
+  params.require(:genre).permit(:gen, :name, :is_genres_status)
 end
 end

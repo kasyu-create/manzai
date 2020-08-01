@@ -6,9 +6,16 @@ Rails.application.routes.draw do
    passwords:     'admins/passwords',
    registrations: 'admins/registrations'
 }
+  devise_scope :user do
+    post 'users/guest_sign_in', to: 'users/sessions#new_guest'
+  end
 
   scope module: 'users' do
     root 'top#top'
+    get 'inquiry' => 'inquirys#index'
+    post 'inquiry' => 'inquirys#create'
+    get 'inquiry/thanks' => 'inquirys#thanks'
+    get 'about' => 'top#about'
    end
 
   namespace :admins do
@@ -18,6 +25,7 @@ Rails.application.routes.draw do
    resources :boke_tukkomis, only: [:show, :new, :create, :edit, :update]
    get 'plan' => 'boke_tukkomis#plan'
    get 'show1/:id' => 'boke_tukkomis#show1'
+   get 'inquiry/receive' => 'inquiry#receive'# 入力画面
   end
 
 
@@ -41,12 +49,9 @@ Rails.application.routes.draw do
    post 'user_boke_tukkomis/date6' => 'user_boke_tukkomis#date6'
    post 'user_boke_tukkomis/date7' => 'user_boke_tukkomis#date7'
    post 'user_boke_tukkomis/date8' => 'user_boke_tukkomis#date8'
-   patch 'users/withdraw' => 'users#withdraw', as: 'users_withdraw'
-   get 'show' => 'users#show'
-   get 'users/edit' => 'users#edit'
-   patch 'update' => 'users#update'
+   resources :users, only: [:show, :index, :edit, :update]
    get 'quit' => 'users#quit'
-   get 'about' => 'users#about'
+   patch 'users/withdraw' => 'users#withdraw', as: 'users_withdraw'
    get 'users/scripts/:id/:id' => 'scripts#edit1'
    resources :scripts, only: [:show, :index, :edit, :update, :destroy]
    resources :user_boke_tukkomis, only: [:index, :show, :edit, :update, :create]

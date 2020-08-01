@@ -25,12 +25,12 @@
 
       <tbody>
 
-        <% @genres.each do |genres| %>
-        <% if genres.is_genres_status == true %>
+        <% @genres.each do |genre| %>
+        <% if genre.is_genres_status == true %>
           <tr>
-            <td><%= genres.gen %></td>
+            <td><%= genre.gen %></td>
 
-            <td><%= link_to genres.name,admins_boke_tukkomi_path(genres) %></td>
+            <td><%= link_to genre.name,admins_boke_tukkomi_path(genre) %></td>
 
           </tr>
           <% end %>

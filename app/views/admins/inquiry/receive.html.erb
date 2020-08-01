@@ -1,0 +1,10 @@
+Webサイトからお問い合わせがありました。
+
+<% @inquiry.each do |inquiry| %>
+--------------------------<br>
+名前: <%= inquiry.name %><br>
+メールアドレス: <%= inquiry.email %><br>
+メッセージ:<%= inquiry.message %><br>
+
+<% end %>
+--------------------------

@@ -2,16 +2,18 @@ class Users::UsersController < ApplicationController
   before_action :authenticate_user!
 
   # マイページへのアクション
-  def show
+  def index
     @user = current_user
+  end
+
+  def show
+    user = current_user
+    @scripts = user.scripts
   end
 
   # 登録情報編集へのアクション
   def edit
     @user = current_user
-  end
-
-  def about
   end
 
   # 登録情報の編集を保存するアクション
