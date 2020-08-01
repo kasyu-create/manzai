@@ -9,9 +9,4 @@ class User < ApplicationRecord
   def active_for_authentication?
     super && (self.is_users_status == true)
   end
-
-  validates :last_name,  presence: true
-  validates :first_name, presence: true
-  validates :last_name_kana,  presence: true
-  validates :first_name_kana, presence: true
 end

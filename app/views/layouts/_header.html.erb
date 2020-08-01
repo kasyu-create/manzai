@@ -8,20 +8,19 @@
         <% if user_signed_in? %>
 
           <!--カスタマーがログインしている時 -->
-          <li style="font-family: HiraMinPro-W6; margin-top: 15px;">
-            ようこそ、<%= current_user.last_name + current_user.first_name %>さん！
-          </li>
-
-          <li><%= link_to "マイページ", users_show_path, style: "font-family: HiraMinPro-W6; color: #000000;" %></li>
+          <li><%= link_to "マイページ", users_users_path, style: "font-family: HiraMinPro-W6; color: #000000;" %></li>
           <li style="font-family: Osaka; margin-top: 15px; color: #696969;">|</li>
 
-          <li><%= link_to "題材一覧", users_user_boke_tukkomis_path, style: "font-family: HiraMinPro-W6; color: #000000;" %></li>
+          <li><%= link_to "ネタ作成画面", users_user_boke_tukkomis_path, style: "font-family: HiraMinPro-W6; color: #000000;" %></li>
           <li style="font-family: Osaka; margin-top: 15px; color: #696969;">|</li>
 
-          <li><%= link_to "ネタ一覧", users_scripts_path, style: "font-family: HiraMinPro-W6; color: #000000;" %></li>
+          <li><%= link_to "投稿ネタ一覧", users_scripts_path, style: "font-family: HiraMinPro-W6; color: #000000;" %></li>
           <li style="font-family: Osaka; margin-top: 15px; color: #696969;">|</li>
 
-          <li><%= link_to "About", users_about_path, style: "font-family: HiraMinPro-W6; color: #000000;" %></li>
+          <li><%= link_to "About", about_path, style: "font-family: HiraMinPro-W6; color: #000000;" %></li>
+          <li style="font-family: Osaka; margin-top: 15px; color: #696969;">|</li>
+
+          <li><%= link_to "お問い合わせ", inquiry_path, style: "font-family: HiraMinPro-W6; color: #000000;" %></li>
           <li style="font-family: Osaka; margin-top: 15px; color: #696969;">|</li>
 
           <li><%= link_to "ログアウト", destroy_user_session_path, method: :delete, style: "font-family: HiraMinPro-W6; color: #000000;" %></li>
@@ -39,17 +38,27 @@
           <li><%= link_to "ジャンル一覧", admins_genres_path, style: "font-family: HiraMinPro-W6; color: #000000;" %></li>
           <li style="font-family: Osaka; margin-top: 15px; color: #696969;">|</li>
 
-          <li><%= link_to "About", users_about_path, style: "font-family: HiraMinPro-W6; color: #000000;" %></li>
+          <li><%= link_to "お問い合わせ", admins_inquiry_receive_path, style: "font-family: HiraMinPro-W6; color: #000000;" %></li>
+          <li style="font-family: Osaka; margin-top: 15px; color: #696969;">|</li>
 
           <li style="font-family: Osaka; margin-top: 15px; color: #696969;">|</li>
           <li><%= link_to "ログアウト", destroy_admin_session_path, method: :delete %></li>
 
         <% else %>
           <!-- ログインしていない時 -->
+          <li><%= link_to "ゲストログインはこちら！", users_guest_sign_in_path, method: :post, style: "font-family: HiraMinPro-W6; color: #000000;" %></li>
+          <li style="font-family: Osaka; margin-top: 15px; color: #696969;">|</li>
+
           <li><%= link_to "新規登録", new_user_registration_path, style: "font-family: HiraMinPro-W6; color: #000000;" %></li>
           <li style="font-family: Osaka; margin-top: 15px; color: #696969;">|</li>
 
           <li><%= link_to "ログイン", new_user_session_path, style: "font-family: HiraMinPro-W6; color: #000000;" %></li>
+
+          <li><%= link_to "About", about_path, style: "font-family: HiraMinPro-W6; color: #000000;" %></li>
+          <li style="font-family: Osaka; margin-top: 15px; color: #696969;">|</li>
+
+          <li><%= link_to "お問い合わせ", inquiry_path, style: "font-family: HiraMinPro-W6; color: #000000;" %></li>
+          <li style="font-family: Osaka; margin-top: 15px; color: #696969;">|</li>
         <% end %>
       </ul>
     </nav>

@@ -1,24 +1,12 @@
 class Users::ScriptsController < ApplicationController
+before_action :authenticate_user!
 
   def index
     @scripts = Script.all
   end
 
   def show
- @scripts = Script.find(params[:id])
-  #  @script = Script.new(params[:id])
-  #  @script.furiboketukkomi = ''
-  # 　UserBokeTukkomi.where(scripts_id:params[:scripts　_id]).order(:created_at).each |script| do
-  #  @script.furiboketukkomi += script.furi + script.boke + script.tukkomi
-  #  end
-  #  @script.save
-
-   # scripts = Script.find(params[:id])
-   # scripts = scripts.user_boke_tukkomis
-   # scripts.furiboketukkomi = scripts.furi + scripts.boke + scripts.tukkomi
-   # @scripts = script
-   # @scripts.update(furiboketukkomi: @userboketukkomis.furi + @userboketukkomis.boke + @userboketukkomis.tukkomi)
-   # @scripts = Script.where(script_id: 1)
+    @scripts = Script.find(params[:id])
   end
 
   def edit

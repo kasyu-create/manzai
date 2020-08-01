@@ -1,3 +1,18 @@
 // Place all the styles related to the users::top controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.toppage {
+  /* 画像ファイルの指定 */
+
+  background-image: image-url("open-book-1428428_1280.png");
+
+  background-position:center bottom;
+
+   /* 画像の表示位置を指定 */
+  background-size:cover;
+
+  /* 画像のサイズを指定  */
+     width:100%;                                            /* 横幅のサイズを指定  */
+     height:550px;
+}

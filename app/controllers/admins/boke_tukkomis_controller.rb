@@ -1,7 +1,8 @@
 class Admins::BokeTukkomisController < ApplicationController
+    before_action :authenticate_admin!
 
   def show
-    @search = BokeTukkomi.ransack(params[:q])
+    @search = BokeTukkomi.where({genre_id: params[:id]}).ransack(params[:q])
     @boke_tukkomis = @search.result.page(params[:page]).per(10)
     @genre = Genre.find(params[:id])
   end
@@ -47,6 +48,10 @@ class Admins::BokeTukkomisController < ApplicationController
   private
   def boke_tukkomi_params
     params.require(:boke_tukkomi).permit(:genre_id, :boke, :tukkomi, :page)
+  end
+
+  def genre_params
+    params.require(:genre).permit(:gen, :name, :is_genres_status)
   end
 
 end

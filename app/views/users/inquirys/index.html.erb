@@ -1,0 +1,21 @@
+<%= form_for @inquiry, :url => inquiry_path do |f| %>
+  <div class="page-header">
+    <h1>お問い合わせ</h1>
+  </div>
+
+  <table class="table">
+    <tr>
+      <td><%= f.label :名前 %></td>
+      <td><%= f.text_field :name %></td>
+    </tr>
+    <tr>
+      <td><%= f.label :メールアドレス %></td>
+      <td><%= f.text_field :email %></td>
+    </tr>
+    <tr>
+      <td><%= f.label :お問い合わせ内容 %></td>
+      <td><%= f.text_area :message %></td>
+    </tr>
+  </table>
+  <%= f.submit '確認', class: 'btn btn-primary' %>
+<% end %>
