@@ -1,8 +1,11 @@
 class Users::ScriptsController < ApplicationController
 before_action :authenticate_user!
+before_action :baria_user, only: [:edit, :destroy]
 
   def index
-    @scripts = Script.all
+    @search = Script.ransack(params[:q])
+    @scripts = @search.result.page(params[:page]).per(10)
+    #@script = Script.find(params[:id]).user.id.name
   end
 
   def show
@@ -33,5 +36,11 @@ before_action :authenticate_user!
     def scripts_params
       params.require(:script).permit(:user_id, :name,:furiboketukkomi)
     end
+
+    def baria_user
+    	unless Script.find(params[:id]).user.id.to_i == current_user.id
+    		redirect_to users_scripts_path
+    	end
+     end
 
 end

@@ -25,7 +25,7 @@ Genre.create!(
 
 Genre.create!(
    gen: '漫才コント',
-   is_genres_status: 'true',
+   is_genres_status: 'false',
    name: '恋愛ドラマ',
 )
 
