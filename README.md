@@ -21,25 +21,29 @@
 <img width="1402" alt="スクリーンショット 2020-08-04 11 03 27" src="https://user-images.githubusercontent.com/63037931/89244980-cb95d000-d642-11ea-8470-f88af53356ff.png">
 
 
-### テーマを選んだ理由
+###:memo: テーマを選んだ理由
 私は大学時代落語研究会に所属していて、よくお笑いのネタを作る時に、「１からネタ作るの難しいなぁ、ネタの設定と展開を誰か考えてくれたら楽やのになぁ」と考えてました。
 そこで私は、選択した設定のネタの展開ごとに、ボケを選択するだけで漫才が出来る機能があれば、ネタ作りがすごく楽になると考え、このアプリを作りました。
 このアプリがあれば、ネタを作った事がない人でも気軽にネタを作る事が出来ます。
 
-### インストール
+###:star: インストール
 git clone https://github.com/kasyu-create/manzai.git  
 cd manzai  
 rails s -b 0.0.0.0
 
-### 主な利用シーン
+###:eyes: 主な利用シーン
 学園祭　飲み会　クラスの出し物
 
 ## 作者
 東野　陽生:Twitter https://twitter.com/m75cCMbYv5LEsO8  
 mail to: ntthigashino@icloud.com
 
-### 技術
-
+###:smile: 技術
+<p align="center">
+<a href="https://guides.rubyonrails.org/"><img src="https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/543133/7a6c27cd-09cb-b9e7-7b1b-1cb56dfbee0c.png" height="60px;" /></a>
+<a href="https://jquery.com/"><img src="https://user-images.githubusercontent.com/57832553/73933784-96712500-4920-11ea-974f-23b73e2c6113.png" height="60px;" /></a>
+<a href="https://aws.amazon.com/jp/aws-jp-introduction/aws-jp-webinar-service-cut/"><img src="https://user-images.githubusercontent.com/57832553/73935917-fec20580-4924-11ea-9b42-36715e8d4ede.png" height="60px;" /></a>
+</p>
 
 ### 機能一覧
 https://docs.google.com/spreadsheets/d/12SV6yoGA3--hbLoXgCpq7yraq-piqLHpmXfEqaQsOMM/edit#gid=777281316
