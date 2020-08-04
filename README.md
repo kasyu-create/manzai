@@ -9,19 +9,19 @@ Rails 5.2.4.1
 
 ### 機能
 ログイン後に漫才の設定を選択する画面が出てくるので、好きな設定を選択します。
-
+<br><br>
 <img width="1426" alt="スクリーンショット 2020-08-04 11 00 16" src="https://user-images.githubusercontent.com/63037931/89244926-ae610180-d642-11ea-88a3-3fcca0ec8e0c.png">
-
+<br><br>
 すると場面ごとにボケの選択肢が出てきます。好きなボケを選択して、次へを押して
-
+<br><br>
 <img width="1394" alt="スクリーンショット 2020-08-04 11 02 05" src="https://user-images.githubusercontent.com/63037931/89244952-bae55a00-d642-11ea-9c42-5867fb32936b.png">
-
+<br><br>
 全ての場面のボケの選択を終えると、、
-
+<br><br>
 <img width="1379" alt="スクリーンショット 2020-08-04 11 16 11" src="https://user-images.githubusercontent.com/63037931/89245513-ec125a00-d643-11ea-942a-584bec67d1eb.png">
-
+<br><br>
 自分が作った漫才が投稿されます！また、このページは全ユーザーが投稿した漫才が見れます！
-
+<br><br>
 <img width="1402" alt="スクリーンショット 2020-08-04 11 03 27" src="https://user-images.githubusercontent.com/63037931/89244980-cb95d000-d642-11ea-8470-f88af53356ff.png">
 
 
@@ -46,8 +46,6 @@ rails s -b 0.0.0.0
 
 ### :star: ライセンス
 This project is licensed free.  
-ご自由にご利用ください
-
-東野　陽生:Twitter https://twitter.com/m75cCMbYv5LEsO8
-
+ご自由にご利用ください<br>
+東野　陽生:Twitter https://twitter.com/m75cCMbYv5LEsO8<br>
 mail to: ntthigashino@icloud.com
