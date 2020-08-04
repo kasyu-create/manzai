@@ -26,7 +26,7 @@
 そこで私は、選択した設定のネタの展開ごとに、ボケを選択するだけで漫才が出来る機能があれば、ネタ作りがすごく楽になると考え、このアプリを作りました。
 このアプリがあれば、ネタを作った事がない人でも気軽にネタを作る事が出来ます。
 
-### :star: インストール
+### :key: インストール
 git clone https://github.com/kasyu-create/manzai.git  
 cd manzai  
 rails s -b 0.0.0.0
@@ -41,7 +41,7 @@ rails s -b 0.0.0.0
 <a href="https://aws.amazon.com/jp/aws-jp-introduction/aws-jp-webinar-service-cut/"><img src="https://user-images.githubusercontent.com/57832553/73935917-fec20580-4924-11ea-9b42-36715e8d4ede.png" height="60px;" /></a>
 </p>
 
-### ライセンス
+### :star: ライセンス
 This project is licensed free.  
 ご自由にご利用ください
 東野　陽生:Twitter https://twitter.com/m75cCMbYv5LEsO8
