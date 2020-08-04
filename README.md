@@ -48,5 +48,7 @@ rails s -b 0.0.0.0
 ### :star: ライセンス
 This project is licensed free.  
 ご自由にご利用ください
+
 東野　陽生:Twitter https://twitter.com/m75cCMbYv5LEsO8
+
 mail to: ntthigashino@icloud.com
