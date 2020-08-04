@@ -4,12 +4,16 @@
 オリジナルの漫才のネタが３分で出来る。漫才ネタ作成アプリです。
 
 ### 機能
-１. ログイン後に題材ごとのリンクがあるので、それをクリックして頂けると題材ごと場面が登場します。  
-２. 場面は１〜８まであるのですが、それぞれボケとそれに沿ったツッコミがラジオボタンで選択出来ます。ラジオボタンを押して頂いて、次へを選択すると次の場面に行く事が出来ます。  
-３. 全てを選択し終わると、ネタ一覧のページに行き台本が完成します。出来上がった台本は自由に編集する事が出来ます。
+<img width="1426" alt="スクリーンショット 2020-08-04 11 00 16" src="https://user-images.githubusercontent.com/63037931/89244926-ae610180-d642-11ea-88a3-3fcca0ec8e0c.png">
+
+<img width="1394" alt="スクリーンショット 2020-08-04 11 02 05" src="https://user-images.githubusercontent.com/63037931/89244952-bae55a00-d642-11ea-9c42-5867fb32936b.png">
+
+<img width="1402" alt="スクリーンショット 2020-08-04 11 03 27" src="https://user-images.githubusercontent.com/63037931/89244980-cb95d000-d642-11ea-8470-f88af53356ff.png">
+
 
 ### テーマを選んだ理由
-漫才のネタを作成し易くする為。
+私は大学時代落語研究会に所属していて、よくお笑いのネタを作る時に、「みんなどういう風に作っているのだろう、みんなのネタが可視化出来れば自分が作る時にすごく参考になるのにな」と感じていました。
+そこで私は、作ったネタが投稿出来るサイトを作れば、みんなネタ作りする上で参考になると考え、このアプリを作りました。
 
 ### インストール
 git clone https://github.com/kasyu-create/manzai.git  
@@ -22,6 +26,8 @@ rails s -b 0.0.0.0
 ## 作者
 東野　陽生:Twitter https://twitter.com/m75cCMbYv5LEsO8  
 mail to: ntthigashino@icloud.com
+
+### 技術
 
 ### 機能一覧
 https://docs.google.com/spreadsheets/d/12SV6yoGA3--hbLoXgCpq7yraq-piqLHpmXfEqaQsOMM/edit#gid=777281316
