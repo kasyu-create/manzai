@@ -34,10 +34,6 @@ rails s -b 0.0.0.0
 ### :eyes: 主な利用シーン
 学園祭　飲み会　クラスの出し物
 
-## 作者
-東野　陽生:Twitter https://twitter.com/m75cCMbYv5LEsO8  
-mail to: ntthigashino@icloud.com
-
 ### :smile: 技術
 <p align="center">
 <a href="https://guides.rubyonrails.org/"><img src="https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/543133/7a6c27cd-09cb-b9e7-7b1b-1cb56dfbee0c.png" height="60px;" /></a>
@@ -45,9 +41,8 @@ mail to: ntthigashino@icloud.com
 <a href="https://aws.amazon.com/jp/aws-jp-introduction/aws-jp-webinar-service-cut/"><img src="https://user-images.githubusercontent.com/57832553/73935917-fec20580-4924-11ea-9b42-36715e8d4ede.png" height="60px;" /></a>
 </p>
 
-### 機能一覧
-https://docs.google.com/spreadsheets/d/12SV6yoGA3--hbLoXgCpq7yraq-piqLHpmXfEqaQsOMM/edit#gid=777281316
-
 ### ライセンス
 This project is licensed free.  
 ご自由にご利用ください
+東野　陽生:Twitter https://twitter.com/m75cCMbYv5LEsO8  
+mail to: ntthigashino@icloud.com
