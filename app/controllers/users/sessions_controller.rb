@@ -31,6 +31,6 @@ class Users::SessionsController < Devise::SessionsController
     # user.confirmed_at = Time.now  # Confirmable を使用している場合は必要
   end
   sign_in user
-  redirect_to about_path, notice: 'ゲストユーザーとしてログインしました。'
-end
+  redirect_to users_user_boke_tukkomis_path, notice: 'ゲストユーザーとしてログインしました。'
+  end
 end

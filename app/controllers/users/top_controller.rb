@@ -4,5 +4,6 @@ class Users::TopController < ApplicationController
   end
 
   def about
+    @genres = Genre.all
   end
 end
