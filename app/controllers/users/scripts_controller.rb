@@ -1,6 +1,6 @@
 class Users::ScriptsController < ApplicationController
 before_action :authenticate_user!
-before_action :baria_user, only: [:edit, :destroy]
+before_action :baria_user, only: [:edit, :destroy, :update]
 
   def index
     @search = Script.ransack(params[:q])
