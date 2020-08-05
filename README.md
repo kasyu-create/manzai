@@ -1,35 +1,51 @@
-# 漫才ネタ作成アプリ（大事なのは、このReadMeで面白いアプリと思ってもらうこと）
+# ネタサク
 
 ## サイト概要
-オリジナルの漫才のネタが３分で出来る。漫才ネタ作成アプリです。
+漫才のネタを３分で作成サイト。略して「ネタサク」です！
 
-### 機能（使い方ではなく、どんなことが出来るのかを画面キャプチャ付きで説明する）
+## バージョン
+ruby 2.5.7<br>
+Rails 5.2.4.1
+
+### 機能
+トップページに漫才の設定を選択する画面が出てくるので、好きな設定を選択します。
+<br><br>
+<img width="1312" alt="スクリーンショット 2020-08-05 14 53 09" src="https://user-images.githubusercontent.com/63037931/89376752-72ee3200-d72b-11ea-90e2-80378d9ee23f.png">
+<br><br>
+すると場面ごとにボケの選択肢が出てきます。好きなボケを選択して、次へを押して
+<br><br>
+<img width="1394" alt="スクリーンショット 2020-08-04 11 02 05" src="https://user-images.githubusercontent.com/63037931/89244952-bae55a00-d642-11ea-9c42-5867fb32936b.png">
+<br><br>
+全ての場面のボケの選択を終えると、、
+<br><br>
+<img width="1379" alt="スクリーンショット 2020-08-04 11 16 11" src="https://user-images.githubusercontent.com/63037931/89245513-ec125a00-d643-11ea-942a-584bec67d1eb.png">
+<br><br>
+自分が作った漫才が投稿されます！また、このページは全ユーザーが投稿した漫才が見れます！
+<br><br>
+<img width="1402" alt="スクリーンショット 2020-08-04 11 03 27" src="https://user-images.githubusercontent.com/63037931/89244980-cb95d000-d642-11ea-8470-f88af53356ff.png">
 
 
-### テーマを選んだ理由（この理由を自分ぼ背景も踏まえてもっと深く、このストーリーで面白いか面白くないか判断される）
-私は大学時代落語研究会に所属していて、よくお笑いのネタを作る時に、「みんなどういう風に作っているのだろう、みんなのネタが可視化出来れば自分が作る時にすごく参考になるのにな」と感じていました。
-そこで私は、作ったネタが投稿出来るサイトを作れば、みんなネタ作りする上で参考になると考え、このアプリを作りました。
+### :memo: テーマを選んだ理由
+私は大学時代落語研究会に所属していて、よくお笑いのネタを作る時に、「１からネタ作るの難しいなぁ、ネタの設定と展開を誰か考えてくれたら楽やのになぁ」と考えてました。
+そこで私は、選択した設定のネタの展開ごとに、ボケを選択するだけで漫才が出来る機能があれば、ネタ作りがすごく楽になると考え、このアプリを作りました。
+このアプリがあれば、ネタを作った事がない人でも気軽にネタを作る事が出来ます。
 
-### インストール
+### :key: インストール
 git clone https://github.com/kasyu-create/manzai.git  
 cd manzai  
 rails s -b 0.0.0.0
 
-### 主な利用シーン
+### :eyes: 主な利用シーン
 学園祭　飲み会　クラスの出し物
 
-## 作者
-東野　陽生:Twitter https://twitter.com/m75cCMbYv5LEsO8  
-mail to: ntthigashino@icloud.com
+### :smile: 技術
+<p align="center">
+<a href="https://guides.rubyonrails.org/"><img src="https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/543133/7a6c27cd-09cb-b9e7-7b1b-1cb56dfbee0c.png" height="60px;" /></a>
+<a href="https://aws.amazon.com/jp/aws-jp-introduction/aws-jp-webinar-service-cut/"><img src="https://user-images.githubusercontent.com/57832553/73935917-fec20580-4924-11ea-9b42-36715e8d4ede.png" height="60px;" /></a>
+</p>
 
-### 技術
-インフラ   ：AWS
-データベース：sqlite
-
-
-### 機能一覧
-https://docs.google.com/spreadsheets/d/12SV6yoGA3--hbLoXgCpq7yraq-piqLHpmXfEqaQsOMM/edit#gid=777281316
-
-### ライセンス
+### :star: ライセンス
 This project is licensed free.  
-ご自由にご利用ください
+ご自由にご利用ください<br>
+東野　陽生:Twitter https://twitter.com/m75cCMbYv5LEsO8<br>
+mail to: ntthigashino@icloud.com
