@@ -8,9 +8,9 @@ ruby 2.5.7<br>
 Rails 5.2.4.1
 
 ### 機能
-ログイン後に漫才の設定を選択する画面が出てくるので、好きな設定を選択します。
+トップページに漫才の設定を選択する画面が出てくるので、好きな設定を選択します。
 <br><br>
-<img width="1426" alt="スクリーンショット 2020-08-04 11 00 16" src="https://user-images.githubusercontent.com/63037931/89244926-ae610180-d642-11ea-88a3-3fcca0ec8e0c.png">
+<img width="1312" alt="スクリーンショット 2020-08-05 14 53 09" src="https://user-images.githubusercontent.com/63037931/89376752-72ee3200-d72b-11ea-90e2-80378d9ee23f.png">
 <br><br>
 すると場面ごとにボケの選択肢が出てきます。好きなボケを選択して、次へを押して
 <br><br>
