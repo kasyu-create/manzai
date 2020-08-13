@@ -4,7 +4,7 @@ class CreateScripts < ActiveRecord::Migration[5.2]
 
       t.integer :user_id
       t.string :name
-      t.text :furiboketukkomi
+      t.text :joke
       t.timestamps
     end
   end

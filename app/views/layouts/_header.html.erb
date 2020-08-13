@@ -8,13 +8,16 @@
         <% if user_signed_in? %>
 
           <!--カスタマーがログインしている時 -->
-          <li><%= link_to "マイページ", users_users_path, style: "font-family: HiraMinPro-W6; color: #000000;" %></li>
+          <li><%= link_to "ネタサク", root_path, style: "font-family: HiraMinPro-W6; color: #000000;" %></li>
           <li style="font-family: Osaka; margin-top: 15px; color: #696969;">|</li>
 
-          <li><%= link_to "ネタ作成画面", users_user_boke_tukkomis_path, style: "font-family: HiraMinPro-W6; color: #000000;" %></li>
+          <li><%= link_to "マイページ", users_path, style: "font-family: HiraMinPro-W6; color: #000000;" %></li>
           <li style="font-family: Osaka; margin-top: 15px; color: #696969;">|</li>
 
-          <li><%= link_to "投稿ネタ一覧", users_scripts_path, style: "font-family: HiraMinPro-W6; color: #000000;" %></li>
+          <li><%= link_to "ネタ作成画面", users_jokes_path, style: "font-family: HiraMinPro-W6; color: #000000;" %></li>
+          <li style="font-family: Osaka; margin-top: 15px; color: #696969;">|</li>
+
+          <li><%= link_to "投稿ネタ一覧", joke_books_path, style: "font-family: HiraMinPro-W6; color: #000000;" %></li>
           <li style="font-family: Osaka; margin-top: 15px; color: #696969;">|</li>
 
           <li><%= link_to "お問い合わせ", inquiry_path, style: "font-family: HiraMinPro-W6; color: #000000;" %></li>
@@ -26,6 +29,7 @@
         <% elsif admin_signed_in? %>
 
           <!-- 管理者がログインしている時 -->
+
           <li><%= link_to "ボケ・ツッコミ一覧", admins_plan_path, style: "font-family: HiraMinPro-W6; color: #000000;" %></li>
           <li style="font-family: Osaka; margin-top: 15px; color: #696969;">|</li>
 
@@ -43,6 +47,9 @@
 
         <% else %>
           <!-- ログインしていない時 -->
+          <li><%= link_to "ネタサク", root_path, style: "font-family: HiraMinPro-W6; color: #000000;" %></li>
+          <li style="font-family: Osaka; margin-top: 15px; color: #696969;">|</li>
+
           <li><%= link_to "ゲストログイン", users_guest_sign_in_path, method: :post, style: "font-family: HiraMinPro-W6; color: #000000;" %></li>
           <li style="font-family: Osaka; margin-top: 15px; color: #696969;">|</li>
 
@@ -50,9 +57,6 @@
           <li style="font-family: Osaka; margin-top: 15px; color: #696969;">|</li>
 
           <li><%= link_to "ログイン", new_user_session_path, style: "font-family: HiraMinPro-W6; color: #000000;" %></li>
-
-          <li><%= link_to "お問い合わせ", inquiry_path, style: "font-family: HiraMinPro-W6; color: #000000;" %></li>
-          <li style="font-family: Osaka; margin-top: 15px; color: #696969;">|</li>
         <% end %>
       </ul>
     </nav>

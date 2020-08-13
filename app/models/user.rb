@@ -4,7 +4,9 @@ class User < ApplicationRecord
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable
 
-  has_many :scripts
+  has_many :joke_books
+  has_many :users_jokes
+  has_many :inquiry
 
   def active_for_authentication?
     super && (self.is_users_status == true)

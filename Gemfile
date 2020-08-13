@@ -75,9 +75,10 @@ group :development, :test do
   gem 'pry-doc'
 end
 
-gem 'dotenv-rails'
-group :production do
-  gem 'mysql2'
-end
+# gem 'dotenv-rails'
+# group :production do
+#   gem 'mysql2'
+# end
 
 gem 'execjs'
+gem 'enum_help'
