@@ -1,6 +1,6 @@
 class Inquiry < ApplicationRecord
   #include ActiveModel::Model
-  validates :name, {presence: true}
-  validates :email, {presence: true}
+
+  belongs_to :user
   validates :message, {presence: true}
 end

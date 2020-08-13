@@ -1,0 +1,23 @@
+<div class="d-flex align-items-center">
+  <h1>ネタ投稿</h1>
+</div>
+<br>
+<%= form_for(@joke_book, url:users_jokes_script_path) do |f| %>
+    <div class="form-group">
+        <%= f.label :name, '設定名' %>
+        <%= f.text_field :name, class: 'form-control' %>
+        <small id="poster-tip" class="form-text text-muted">
+            設定名を入力してください。
+        </small>
+    </div>
+    <br>
+    <div class="form-group">
+        <%= f.label :joke, 'ネタ内容' %>
+        <%= f.text_area :joke, class: 'form-control', rows:10 %>
+        <small id="content-tip" class="form-text text-muted">
+            ネタ内容を入力してください。
+        </small>
+    </div>
+    <br>
+    <%= f.submit '投稿', class: 'btn btn-info btn-block' %>
+<% end %>

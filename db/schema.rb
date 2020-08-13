@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_07_29_021100) do
+ActiveRecord::Schema.define(version: 2020_08_12_113603) do
 
   create_table "admins", force: :cascade do |t|
     t.string "email", default: "", null: false
@@ -24,45 +24,36 @@ ActiveRecord::Schema.define(version: 2020_07_29_021100) do
     t.index ["reset_password_token"], name: "index_admins_on_reset_password_token", unique: true
   end
 
-  create_table "boke_tukkomis", force: :cascade do |t|
+  create_table "admins_jokes", force: :cascade do |t|
     t.integer "genre_id"
-    t.text "furi"
-    t.text "boke"
-    t.text "tukkomi"
+    t.text "introduction"
+    t.text "funny_man"
+    t.text "straight_man"
     t.integer "page"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
   create_table "genres", force: :cascade do |t|
-    t.string "gen"
-    t.boolean "is_genres_status", default: true, null: false
+    t.integer "category", default: 0, null: false
+    t.boolean "status", default: true, null: false
+    t.boolean "boolean", default: true, null: false
     t.string "name"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
   create_table "inquiries", force: :cascade do |t|
-    t.string "name"
-    t.string "email"
+    t.integer "user_id"
     t.text "message"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
-  create_table "scripts", force: :cascade do |t|
+  create_table "joke_books", force: :cascade do |t|
     t.integer "user_id"
     t.string "name"
-    t.text "furiboketukkomi"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
-  create_table "user_boke_tukkomis", force: :cascade do |t|
-    t.integer "script_id"
-    t.text "furi"
-    t.text "boke"
-    t.text "tukkomi"
+    t.text "joke"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -79,6 +70,16 @@ ActiveRecord::Schema.define(version: 2020_07_29_021100) do
     t.datetime "updated_at", null: false
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
+  end
+
+  create_table "users_jokes", force: :cascade do |t|
+    t.integer "joke_book_id"
+    t.integer "user_id"
+    t.text "introduction"
+    t.text "funny_man"
+    t.text "straight_man"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
 end
