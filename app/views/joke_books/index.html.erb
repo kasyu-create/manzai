@@ -15,8 +15,7 @@
 
   </div>
 
-  <br>
-    <!-- ofsetは左右の余白 -->
+  <div class="col-xs-10 col-xs-offset-1">
   <% @joke_books.each do |joke_book| %>
 	<% if joke_book.joke != nil %>
     <table class="table genre-index">
@@ -36,7 +35,5 @@
     </table>
 		  <% end %>
       <% end %>
-
-
-</div>
+  </div>
 </div>

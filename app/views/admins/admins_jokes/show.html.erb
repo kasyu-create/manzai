@@ -14,17 +14,19 @@
   <div class="text-right">
       <%= link_to "新規登録" ,new_admins_admins_joke_path, class:"btn btn-lg btn-primary" %>
   </div>
+	</div>
+</div>
 
+<div class="row">
+  <div class="col-xs-10 col-xs-offset-1">
       <!-- ofsetは左右の余白 -->
       <table class="table">
         <thead>
           <tr>
-            <th>ストーリーID</th>
             <th>ストーリー名</th>
 						<th>フリ</th>
             <th>ボケ</th>
             <th>ツッコミ</th>
-            <th>ページ</th>
           </tr>
         </thead>
 
@@ -32,12 +34,10 @@
           <% @admins_jokes.each do |admins_joke| %>
 					<% if @genre.id == admins_joke.genre.id %>
             <tr>
-              <td><%= link_to admins_joke.id,admins_path(admins_joke) %></td>
-              <td><%= admins_joke.genre.name %></td>
+              <td><%= link_to admins_joke.id,admins_path(admins_joke)  %></td>
 							<td><%= admins_joke.introduction %></td>
               <td><%= admins_joke.funny_man %></td>
               <td><%= admins_joke.straight_man %></td>
-              <td><%= admins_joke.page %></td>
             </tr>
             <% end %>
 						<% end %>
