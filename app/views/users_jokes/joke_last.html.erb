@@ -1,7 +1,6 @@
 <div class="row">
   <div class="col-xs-4">
-      <h2>場面<%= @conto_page %> </h2><br>
-
+      <h2>場面8</h2><br>
       <!-- <div class="adminsjoke-new-form">
 
       </div> -->
@@ -9,12 +8,10 @@
 
       <br><br><br><br>
       <div class="col-xs-8">
-
-        <br>
         <p style="font-size: 20px;">下記にボケの選択肢があります！ボタンを選択して次へを押してください！</p>
         <br>
 
-        <%= form_with(model: @usersjoke ,url: users_jokes_date2_path(joke_book_id: @joke_book_id, genre_id: @genre_id, conto_page: @conto_page),method: :post, local: true) do |f| %>
+        <%= form_with(model: @usersjoke ,url: users_jokes_joke_last_path(joke_book_id: @joke_book_id, genre_id: @genre_id, conto_page: @conto_page),method: :post, local: true) do |f| %>
 
         <%=f.hidden_field :introduction, value: @adminsjoke.last.introduction %>
         <p><%= @adminsjoke.last.introduction %></p>
@@ -25,7 +22,7 @@
         <%=f.hidden_field :joke_book_id, value:@joke_book_id %>
 
         <div class="boke">
-        <%=f.radio_button :users_joke, adminsjoke.funny_man + "," + adminsjoke.straight_man %>
+         <%=f.radio_button :users_joke, adminsjoke.funny_man + "," + adminsjoke.straight_man %>
 
         <%=f.label :users_joke, "#{adminsjoke.funny_man} #{adminsjoke.straight_man}"%>
         <!-- ここが"#{}"で書く必要があるのか分からない -->

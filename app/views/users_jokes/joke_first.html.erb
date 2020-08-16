@@ -13,7 +13,7 @@
         <br>
         <p style="font-size: 20px;">下記にボケの選択肢があります！ボタンを選択して次へを押してください！</p>
         <br>
-        <%= form_with(model: @usersjoke ,url: users_jokes_date2_path(joke_book_id: @joke_book_id, genre_id: @genre_id, conto_page: @conto_page),method: :post, local: true) do |f| %>
+        <%= form_with(model: @usersjoke ,url: users_jokes_joke_middle_path(joke_book_id: @joke_book_id, genre_id: @genre_id, conto_page: @conto_page),method: :post, local: true) do |f| %>
 
         <%=f.hidden_field :introduction, value: @adminsjoke.last.introduction %>
         <p><%= @adminsjoke.last.introduction %></p>
