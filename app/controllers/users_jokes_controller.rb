@@ -36,14 +36,14 @@ class UsersJokesController < ApplicationController
     @joke_book.name = @genre.name
     @joke_book.user_id = current_user.id
     if @joke_book.save
-      redirect_to users_jokes_date1_path(joke_book_id: @joke_book.id, genre_id: @genre.id)
+      redirect_to users_jokes_joke_first_path(joke_book_id: @joke_book.id, genre_id: @genre.id)
       # ここに引数で@joke_bookでjoke_bookIDを渡せれば
     else
       redirect_to users_jokes_path
     end
   end
 
-  def date1
+  def joke_first
     @usersjoke = UsersJoke.new
     @adminsjoke = AdminsJoke.where(page: 1, genre_id: params[:genre_id])
     @joke_book_id = params[:joke_book_id]
@@ -51,7 +51,7 @@ class UsersJokesController < ApplicationController
     @conto_page = 1
   end
 
-  def date2
+  def joke_middle
     users_joke = bsf(
     params[:users_joke][:users_joke],params[:users_joke][:joke_book_id], params[:users_joke][:introduction])
       unless users_joke.save!
@@ -61,7 +61,7 @@ class UsersJokesController < ApplicationController
     if params[:conto_page].to_i == 7
       @joke_book_id = params[:users_joke][:joke_book_id]
       @genre_id = params[:genre_id]
-      redirect_to users_jokes_date8_path(joke_book_id: @joke_book_id, genre_id: @genre_id)
+      redirect_to users_jokes_joke_last_path(joke_book_id: @joke_book_id, genre_id: @genre_id)
     else
       @conto_page = params[:conto_page].to_i+1
     end
@@ -72,7 +72,7 @@ class UsersJokesController < ApplicationController
     @genre_id = params[:genre_id]
   end
 
-  def date8
+  def joke_last
     logger.debug 'zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz'
     logger.debug request.referer
     logger.debug 'zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz'
@@ -86,11 +86,11 @@ class UsersJokesController < ApplicationController
     users_joke = bsf(
     params[:users_joke][:users_joke],params[:users_joke][:joke_book_id], params[:users_joke][:introduction])
      unless users_joke.save!
-      redirect_to users_jokes_date2_path
+      redirect_to users_jokes_joke_middle_path
      end
     @joke_book_id = params[:users_joke][:joke_book_id]
 
-    if request.referer.include?('date8')
+    if request.referer.include?('joke_last')
     #シナリオテーブルにフリボケツッコミを保存する処理
     usersjoke =   UsersJoke.where(joke_book_id: @joke_book_id)
     contents = []

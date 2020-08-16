@@ -21,10 +21,10 @@ Rails.application.routes.draw do
   post 'users_jokes/script' => 'users_jokes#script'
 
   post 'users_jokes/create' => 'users_jokes#create'
-  get 'users_jokes/date1' => 'users_jokes#date1'
-  post 'users_jokes/date2' => 'users_jokes#date2'
-  get 'users_jokes/date8' => 'users_jokes#date8'
-  post 'users_jokes/date8' => 'users_jokes#create'
+  get 'users_jokes/joke_first' => 'users_jokes#joke_first'
+  post 'users_jokes/joke_middle' => 'users_jokes#joke_middle'
+  get 'users_jokes/joke_last' => 'users_jokes#joke_last'
+  post 'users_jokes/joke_last' => 'users_jokes#create'
 
   resources :users, only: [:show, :index, :edit, :update]
   get 'quit' => 'users#quit'
