@@ -1,15 +1,13 @@
 <div class="row">
-  <div class="col-xs-10 col-xs-offset-1">
-
+  <div class="col-xs-12">
     <h2>完成ネタ一覧</h2>
     <h4>ここはご自身が作ったネタのみ表示されます！</h4>
-    <br>
-
   </div>
 
-  <br>
+  <div class="col-xs-12">
     <!-- ofsetは左右の余白 -->
   <% @joke_books.each do |joke_book| %>
+  <% if joke_book.joke != nil %>
     <table class="table genre-index">
       <thead>
         <tr>
@@ -18,15 +16,12 @@
       </thead>
 
       <tbody>
-
           <tr>
             <td><%= link_to joke_book.name, joke_book_path(joke_book) %></td>
           </tr>
-
       </tbody>
     </table>
       <% end %>
-
-
-</div>
+      <% end %>
+  </div>
 </div>
