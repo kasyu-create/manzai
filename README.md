@@ -34,6 +34,7 @@ Rails 5.2.4.1
 git clone https://github.com/kasyu-create/manzai.git  
 cd manzai  
 rails s -b 0.0.0.0
+bundle exec rake db:seed
 
 ### :eyes: 主な利用シーン
 学園祭　飲み会　クラスの出し物
