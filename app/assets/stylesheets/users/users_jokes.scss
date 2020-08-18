@@ -3,3 +3,11 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 /* SIBLING FADE: fade out siblings around a hovered item */
+
+.joke_select {
+  position: relative; /* ① */
+}
+
+.joke_select label{
+  position: absolute;
+}

@@ -20,16 +20,17 @@
         <p><%= @adminsjoke.last.introduction %></p>
         <br><br>
 
-        <% @adminsjoke.each do |adminsjoke| %>
+        <% @adminsjoke.each_with_index do |adminsjoke,index| %>
 
         <%=f.hidden_field :joke_book_id, value:@joke_book_id %>
 
         <div class="boke">
-        <%=f.radio_button :users_joke, adminsjoke.funny_man + "," + adminsjoke.straight_man %>
+          <%=f.radio_button :users_joke, adminsjoke.funny_man + "," + adminsjoke.straight_man,id:"users_joke_#{index}" %>
 
-        <%=f.label :users_joke, "#{adminsjoke.funny_man} #{adminsjoke.straight_man}"%>
-        <!-- ここが"#{}"で書く必要があるのか分からない -->
+         <%=f.label :users_joke,
+         "#{adminsjoke.funny_man}　　#{adminsjoke.straight_man}",for:"users_joke_#{index}"%>
         </div>
+        <br>
 
 
 

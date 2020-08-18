@@ -52,7 +52,7 @@ class UsersJokesController < ApplicationController
   end
 
   def joke_middle
-    users_joke = bsf(
+    users_joke = usersjokes(
     params[:users_joke][:users_joke],params[:users_joke][:joke_book_id], params[:users_joke][:introduction])
       unless users_joke.save!
         users_jokes_path
@@ -83,7 +83,7 @@ class UsersJokesController < ApplicationController
   end
 
   def create
-    users_joke = bsf(
+    users_joke = usersjokes(
     params[:users_joke][:users_joke],params[:users_joke][:joke_book_id], params[:users_joke][:introduction])
      unless users_joke.save!
       redirect_to users_jokes_joke_middle_path
@@ -120,11 +120,11 @@ class UsersJokesController < ApplicationController
     params.require(:genre).permit(:category ,:name)
   end
 
-  def bsf(users_joke,joke_book_id,introduction)
-    bts = users_joke.split(",")
+  def usersjokes(users_joke,joke_book_id,introduction)
+    usersjoke = users_joke.split(",")
     UsersJoke.new(
-      funny_man: bts[0],
-      straight_man: bts[1],
+      funny_man: usersjoke[0],
+      straight_man: usersjoke[1],
       joke_book_id: joke_book_id,
       introduction: introduction,
       user_id: current_user.id
