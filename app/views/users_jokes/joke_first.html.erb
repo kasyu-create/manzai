@@ -19,22 +19,20 @@
         <p><%= @adminsjoke.last.introduction %></p>
         <br><br>
 
-        <% @adminsjoke.each do |adminsjoke| %>
+        <% @adminsjoke.each_with_index do |adminsjoke,index| %>
 
 
         <%=f.hidden_field :joke_book_id, value:@joke_book_id %>
 
-        <div class="furi">
+        <div class="joke_select">
 
 
-         <%=f.radio_button :users_joke, adminsjoke.funny_man + "," + adminsjoke.straight_man  %>
-        <!-- モデル名であるadminsjokeをシンボルの書き方で、持って来ている。このadminsjokeはcontrollerの方でwhere構文で絞っている。ボケ、ツッコミをシンボルでそれぞれ行い、さらにそれをto.jsonでシンボル化している。
-        ここで疑問なのは、{}でなぜ括る必要があるのかと、シンボルになっているのにわざわざもう一度.to_jsonする必要はあるのか。 -->
+         <%=f.radio_button :users_joke, adminsjoke.funny_man + "," + adminsjoke.straight_man,id:"users_joke_#{index}" %>
 
-        <%=f.label :users_joke, "#{adminsjoke.funny_man} #{adminsjoke.straight_man}"%>
-        <!-- ここが"#{}"で書く必要があるのか分からない -->
+        <%=f.label :users_joke,
+        "#{adminsjoke.funny_man}　　#{adminsjoke.straight_man}",for:"users_joke_#{index}"%>
         </div>
-
+        <br>
 
 
         <% end %>

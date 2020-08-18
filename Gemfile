@@ -83,3 +83,4 @@ end
 
 gem 'execjs'
 gem 'enum_help'
+gem 'roo'
