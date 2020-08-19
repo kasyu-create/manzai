@@ -8,7 +8,7 @@
         <% if user_signed_in? %>
 
           <!--カスタマーがログインしている時 -->
-          <li><%= link_to "ネタサク", root_path, style: "font-family: HiraMinPro-W6; color: #000000;" %></li>
+          <li><%= link_to "トップページ", root_path, style: "font-family: HiraMinPro-W6; color: #000000;" %></li>
           <li style="font-family: Osaka; margin-top: 15px; color: #696969;">|</li>
 
           <li><%= link_to "マイページ", users_path, style: "font-family: HiraMinPro-W6; color: #000000;" %></li>
@@ -47,7 +47,7 @@
 
         <% else %>
           <!-- ログインしていない時 -->
-          <li><%= link_to "ネタサク", root_path, style: "font-family: HiraMinPro-W6; color: #000000;" %></li>
+          <li><%= link_to "トップページ", root_path, style: "font-family: HiraMinPro-W6; color: #000000;" %></li>
           <li style="font-family: Osaka; margin-top: 15px; color: #696969;">|</li>
 
           <li><%= link_to "ゲストログイン", users_guest_sign_in_path, method: :post, style: "font-family: HiraMinPro-W6; color: #000000;" %></li>
