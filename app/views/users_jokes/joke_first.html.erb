@@ -30,13 +30,13 @@
          <%=f.radio_button :users_joke, adminsjoke.funny_man + "," + adminsjoke.straight_man,id:"users_joke_#{index}" %>
 
         <%=f.label :users_joke,
-        "#{adminsjoke.funny_man}　　#{adminsjoke.straight_man}",for:"users_joke_#{index}"%>
+        "#{adminsjoke.funny_man}<br>#{adminsjoke.straight_man}".html_safe,for:"users_joke_#{index}"%>
         </div>
         <br>
 
 
         <% end %>
-        <%= f.submit"次へ" %>
+        <%= f.submit('次へ',class: 'btn btn-primary btn-lg')%>
         <% end %>
 
       </div>

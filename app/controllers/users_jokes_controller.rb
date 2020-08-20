@@ -25,16 +25,20 @@ class UsersJokesController < ApplicationController
   end
 
   def show
-    user = User.find_or_create_by!(email: 'guest@changeguest.com', name: 'ゲスト') do |user|
-      user.password = SecureRandom.urlsafe_base64
-      # user.confirmed_at = Time.now  # Confirmable を使用している場合は必要
+    if current_user.nil?
+      user = User.find_or_create_by!(email: 'guest@changeguest.com', name: 'ゲスト') do |user|
+        user.password = SecureRandom.urlsafe_base64
+        # user.confirmed_at = Time.now  # Confirmable を使用している場合は必要
+      end
+    else
+      user = current_user
     end
     sign_in user
 
     @genre = Genre.find(params[:id])
     @joke_book = JokeBook.new
     @joke_book.name = @genre.name
-    @joke_book.user_id = current_user.id
+    @joke_book.user_id = user.id
     if @joke_book.save
       redirect_to users_jokes_joke_first_path(joke_book_id: @joke_book.id, genre_id: @genre.id)
       # ここに引数で@joke_bookでjoke_bookIDを渡せれば

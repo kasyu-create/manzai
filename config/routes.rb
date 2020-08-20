@@ -18,6 +18,7 @@ Rails.application.routes.draw do
   post 'inquiry' => 'inquirys#create'
   get 'inquiry/thanks' => 'inquirys#thanks'
   get 'about' => 'top#about'
+  post 'login' => 'users_jokes#login'
   post 'users_jokes/script' => 'users_jokes#script'
 
   post 'users_jokes/create' => 'users_jokes#create'
