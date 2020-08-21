@@ -16,7 +16,7 @@
         <%= form_with(model: @usersjoke ,url: users_jokes_joke_middle_path(joke_book_id: @joke_book_id, genre_id: @genre_id, conto_page: @conto_page),method: :post, local: true) do |f| %>
 
         <%=f.hidden_field :introduction, value: @adminsjoke.last.introduction %>
-        <p><%= @adminsjoke.last.introduction %></p>
+        <p style="font-size: 20px;"><%= @adminsjoke.last.introduction %></p>
         <br><br>
 
         <% @adminsjoke.each_with_index do |adminsjoke, index| %>
@@ -29,14 +29,13 @@
 
          <%=f.radio_button :users_joke, adminsjoke.funny_man + "," + adminsjoke.straight_man,id:"users_joke_#{index}" %>
 
-        <%=f.label :users_joke,
-        "#{adminsjoke.funny_man}<br>#{adminsjoke.straight_man}".html_safe,for:"users_joke_#{index}"%>
-        </div>
-        <br>
+        <p style="font-size: 20px;"><%=f.label :users_joke,"#{adminsjoke.funny_man}<br>#{adminsjoke.straight_man}".html_safe,for:"users_joke_#{index}"%>
+      </div></p>
+        <br><br><br><br><br>
 
 
         <% end %>
-        <%= f.submit('次へ',class: 'btn btn-primary btn-lg')%>
+        <%= f.submit('次へ',class: 'btn btn-primary btn-lg btn-block')%>
         <% end %>
 
       </div>
