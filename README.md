@@ -8,21 +8,21 @@ ruby 2.5.7<br>
 Rails 5.2.4.1
 
 ### 機能
-トップページに漫才の設定を選択する画面が出てくるので、好きな設定を選択します。
+トップページで漫才のネタを選択出来ます！好きなネタを選択して下さい！
 <br><br>
-<img width="1312" alt="スクリーンショット 2020-08-05 14 53 09" src="https://user-images.githubusercontent.com/63037931/89376752-72ee3200-d72b-11ea-90e2-80378d9ee23f.png">
+<img width="1395" alt="スクリーンショット 2020-08-22 15 32 07" src="https://user-images.githubusercontent.com/63037931/90950489-faa6a100-e48c-11ea-83de-1c01905c8b0d.png">
 <br><br>
-すると場面ごとにボケの選択肢が出てきます。好きなボケを選択して、次へを押して
+するとネタの場面ごとにボケの選択肢が出てきます。好きなボケを選択して、次へを押して
 <br><br>
-<img width="1394" alt="スクリーンショット 2020-08-04 11 02 05" src="https://user-images.githubusercontent.com/63037931/89244952-bae55a00-d642-11ea-9c42-5867fb32936b.png">
+<img width="1393" alt="スクリーンショット 2020-08-22 15 33 15" src="https://user-images.githubusercontent.com/63037931/90950495-04300900-e48d-11ea-8fc8-58fd22e958d7.png">
 <br><br>
-全ての場面のボケの選択を終えると、、
+全ての場面のボケの選択を終えると、、（全て８場面まであります）
 <br><br>
-<img width="1379" alt="スクリーンショット 2020-08-04 11 16 11" src="https://user-images.githubusercontent.com/63037931/89245513-ec125a00-d643-11ea-942a-584bec67d1eb.png">
+<img width="1329" alt="スクリーンショット 2020-08-22 15 33 42" src="https://user-images.githubusercontent.com/63037931/90950500-0e520780-e48d-11ea-9731-12f486a9c10f.png">
 <br><br>
 自分が作った漫才が投稿されます！また、このページは全ユーザーが投稿した漫才が見れます！
 <br><br>
-<img width="1402" alt="スクリーンショット 2020-08-04 11 03 27" src="https://user-images.githubusercontent.com/63037931/89244980-cb95d000-d642-11ea-8470-f88af53356ff.png">
+<img width="1308" alt="スクリーンショット 2020-08-22 15 34 26" src="https://user-images.githubusercontent.com/63037931/90950503-17db6f80-e48d-11ea-85fe-2528a0e3c9f9.png">
 
 
 ### :memo: テーマを選んだ理由 => ネタ作りをもっと楽にしたい、もっとお笑いの情報をオープンにしたい
