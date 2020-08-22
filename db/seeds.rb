@@ -43,7 +43,7 @@ Genre.create!(
 
 AdminsJoke.create!(
   genre_id: 1,
-  introduction: "デートってどうしたらいいか分からんよな。まぁ確かに難しいよな。じゃあ今から俺が男役でデートのやり方教えるわ。え、いいの。じゃあ車で迎えに行くから待っといて。キキー（車のブレーキの音）ごめん、待った？",
+  introduction: "ボケ　　：デートってどうしたらいいか分からんよな。\n" + "ツッコミ：確かに難しいよな。じゃあ今から俺が男役でデートのやり方教えるわ。\n" + "ボケ　　：え、いいの。\n" + "ツッコミ：じゃあ車で迎えに行くから待っといて。\n" + "ツッコミ：キキー（車のブレーキの音）ごめん、待った？",
   funny_man: 'ボケ　　：ネタ合わせしよや。',
   straight_man: 'ツッコミ：お前やないか。違う女の子役をやって欲しい。',
   page: 1,
@@ -51,7 +51,7 @@ AdminsJoke.create!(
 
 AdminsJoke.create!(
   genre_id: 1,
-  introduction: 'デートってどうしたらいいか分からんよな。まぁ確かに難しいよな。じゃあ今から俺が男役でデートのやり方教えるわ。え、いいの。じゃあ車で迎えに行くから待っといて。キキー（車のブレーキの音）ごめん、待った？',
+  introduction: "ボケ　　：デートってどうしたらいいか分からんよな。\n" + "ツッコミ：確かに難しいよな。じゃあ今から俺が男役でデートのやり方教えるわ。\n" + "ボケ　　：え、いいの。\n" + "ツッコミ：じゃあ車で迎えに行くから待っといて。\n" + "ツッコミ：キキー（車のブレーキの音）ごめん、待った？",
   funny_man: 'ボケ　　：おはようございます！',
   straight_man: 'ツッコミ：なんで体育会系やねん。女の子やから。',
   page: 1,
@@ -59,7 +59,7 @@ AdminsJoke.create!(
 
 AdminsJoke.create!(
   genre_id: 1,
-  introduction: 'デートってどうしたらいいか分からんよな。まぁ確かに難しいよな。じゃあ今から俺が男役でデートのやり方教えるわ。え、いいの。じゃあ車で迎えに行くから待っといて。キキー（車のブレーキの音）ごめん、待った？',
+  introduction: "ボケ　　：デートってどうしたらいいか分からんよな。\n" + "ツッコミ：確かに難しいよな。じゃあ今から俺が男役でデートのやり方教えるわ。\n" + "ボケ　　：え、いいの。\n" + "ツッコミ：じゃあ車で迎えに行くから待っといて。\n" + "ツッコミ：キキー（車のブレーキの音）ごめん、待った？",
   funny_man: 'ボケ　　：う、ううん（バレやすい嘘を言う感じで）。',
   straight_man: 'ツッコミ：嘘やな。ごめんごめん。待たせて。',
   page: 1,
@@ -67,7 +67,7 @@ AdminsJoke.create!(
 
 AdminsJoke.create!(
   genre_id: 1,
-  introduction: '見てよ、この車。',
+  introduction: 'ツッコミ：見てよ、この車。',
   funny_man: 'ボケ　　：すごーい。BMWのセダンだね！',
   straight_man: 'ツッコミ：めっちゃ詳しいやん。とりあえず行こうか。',
   page: 2,
@@ -75,7 +75,7 @@ AdminsJoke.create!(
 
 AdminsJoke.create!(
   genre_id: 1,
-  introduction: '見てよ、この車。',
+  introduction: 'ツッコミ：見てよ、この車。',
   funny_man: 'ボケ　　：すごーい。レンタカーだね！',
   straight_man: 'ツッコミ：あんま言わんといてそう言う事。とりあえず行こうか。',
   page: 2,
@@ -83,7 +83,7 @@ AdminsJoke.create!(
 
 AdminsJoke.create!(
   genre_id: 1,
-  introduction: '見てよ、この車。',
+  introduction: 'ツッコミ：見てよ、この車。',
   funny_man: 'ボケ　　：すごーい。なんでトラクターで来たの〜？',
   straight_man: 'ツッコミ：なんで俺デートでトラクターで来るねん。自動車やから。とりあえず行こうか。',
   page: 2,
@@ -91,7 +91,7 @@ AdminsJoke.create!(
 
 AdminsJoke.create!(
   genre_id: 1,
-  introduction: 'ブーン（車を運転する音）。どう乗り心地は？',
+  introduction: 'ツッコミ：ブーン（車を運転する音）。どう乗り心地は？',
   funny_man: 'ボケ　　：（スマホいじりまくってる）。',
   straight_man: 'ツッコミ：めっちゃスマホいじってるやん！あんまそう言う事せんといて。',
   page: 3,
@@ -99,7 +99,7 @@ AdminsJoke.create!(
 
 AdminsJoke.create!(
   genre_id: 1,
-  introduction: 'ブーン（車を運転する音）。どう乗り心地は？',
+  introduction: 'ツッコミ：ブーン（車を運転する音）。どう乗り心地は？',
   funny_man: 'ボケ　　：（既に寝てる）',
   straight_man: 'ツッコミ：寝るのはやっ！あんまそう言う事せんといて。',
   page: 3,
@@ -107,7 +107,7 @@ AdminsJoke.create!(
 
 AdminsJoke.create!(
   genre_id: 1,
-  introduction: 'ブーン（車を運転する音）。どう乗り心地は？',
+  introduction: 'ツッコミ：ブーン（車を運転する音）。どう乗り心地は？',
   funny_man: 'ボケ　　：（化粧しまくる）。',
   straight_man: 'ツッコミ：ここで化粧！？あんまそう言う事せんといて。',
   page: 3,
@@ -115,7 +115,7 @@ AdminsJoke.create!(
 
 AdminsJoke.create!(
   genre_id: 1,
-  introduction: 'キキー（車のブレーキの音）。（バタン）どうここ？落ち着いた雰囲気で良いでしょ。喜んでくれたかな？',
+  introduction: 'ツッコミ：キキー（車のブレーキの音）。（バタン）どうここ？落ち着いた雰囲気で良いでしょ。喜んでくれたかな？',
   funny_man: 'ボケ　　：え、なんて？',
   straight_man: 'ツッコミ：全然聞いてないやん！',
   page: 4,
@@ -123,7 +123,7 @@ AdminsJoke.create!(
 
 AdminsJoke.create!(
   genre_id: 1,
-  introduction: 'キキー（車のブレーキの音）。（バタン）どうここ？落ち着いた雰囲気で良いでしょ。喜んでくれたかな？',
+  introduction: 'ツッコミ：キキー（車のブレーキの音）。（バタン）どうここ？落ち着いた雰囲気で良いでしょ。喜んでくれたかな？',
   funny_man: 'ボケ　　：すごーい。大きい図書館ね。',
   straight_man: 'ツッコミ：誰がデートで図書館行くねん！確かに落ち着いてるけど。レストランやから。',
   page: 4,
@@ -131,7 +131,7 @@ AdminsJoke.create!(
 
 AdminsJoke.create!(
   genre_id: 1,
-  introduction: 'キキー（車のブレーキの音）。（バタン）どうここ？落ち着いた雰囲気で良いでしょ。喜んでくれたかな？',
+  introduction: 'ツッコミ：キキー（車のブレーキの音）。（バタン）どうここ？落ち着いた雰囲気で良いでしょ。喜んでくれたかな？',
   funny_man: 'ボケ　　：ブーン（車パクって逃げる）。',
   straight_man: 'ツッコミ：おい、逃げるな！逃げるな！',
   page: 4,
@@ -139,7 +139,7 @@ AdminsJoke.create!(
 
 AdminsJoke.create!(
   genre_id: 1,
-  introduction: 'そしたら２人レストランの席に座ったら綺麗な夜景が広がってるわけや。',
+  introduction: 'ツッコミ：そしたら２人レストランの席に座ったら綺麗な夜景が広がってるわけや。',
   funny_man: 'ボケ　　：綺麗ね。でもこの夜景より私の方が綺麗ね。',
   straight_man: 'ツッコミ：あんま自分で言う人おらんかな。',
   page: 5,
@@ -147,7 +147,7 @@ AdminsJoke.create!(
 
 AdminsJoke.create!(
   genre_id: 1,
-  introduction: 'そしたら２人レストランの席に座ったら綺麗な夜景が広がってるわけや。',
+  introduction: 'ツッコミ：そしたら２人レストランの席に座ったら綺麗な夜景が広がってるわけや。',
   funny_man: 'ボケ　　：この夜景より君の方がずっと綺麗だよ。',
   straight_man: 'ツッコミ：俺が言うセリフやから。',
   page: 5,
@@ -155,7 +155,7 @@ AdminsJoke.create!(
 
 AdminsJoke.create!(
   genre_id: 1,
-  introduction: 'そしたら２人レストランの席に座ったら綺麗な夜景が広がってるわけや。',
+  introduction: 'ツッコミ：そしたら２人レストランの席に座ったら綺麗な夜景が広がってるわけや。',
   funny_man: 'ボケ　　：すごーい。たくさん工場がある〜。',
   straight_man: 'ツッコミ：違うやろ！そこはお前街の夜景やろ。',
   page: 5,
@@ -163,7 +163,7 @@ AdminsJoke.create!(
 
 AdminsJoke.create!(
   genre_id: 1,
-  introduction: 'ほんで料理が終わったらプレゼントとか渡すねん。君にプレゼントがあるんだ。はい。気に入ってくれたかな。',
+  introduction: "ツッコミ：ほんで料理が終わったらプレゼントとか渡すねん。\n" + "ツッコミ：君にプレゼントがあるんだ。はい。気に入ってくれたかな。",
   funny_man: 'ボケ　　：え！さっきの車の鍵！ありがとう！',
   straight_man: 'ツッコミ：そんな訳ないやろ。大体こう言うのはお花やったりするやろ。',
   page: 6,
@@ -171,7 +171,7 @@ AdminsJoke.create!(
 
 AdminsJoke.create!(
   genre_id: 1,
-  introduction: 'ほんで料理が終わったらプレゼントとか渡すねん。君にプレゼントがあるんだ。はい。気に入ってくれたかな。',
+  introduction: "ツッコミ：ほんで料理が終わったらプレゼントとか渡すねん。\n" + "ツッコミ：君にプレゼントがあるんだ。はい。気に入ってくれたかな。",
   funny_man: 'ボケ　　：え、犬！？',
   straight_man: 'ツッコミ：渡すかぁ！なんでプレゼントに犬渡すねん。　',
   page: 6,
@@ -179,7 +179,7 @@ AdminsJoke.create!(
 
 AdminsJoke.create!(
   genre_id: 1,
-  introduction: 'ほんで料理が終わったらプレゼントとか渡すねん。君にプレゼントがあるんだ。はい。気に入ってくれたかな。',
+  introduction: "ツッコミ：ほんで料理が終わったらプレゼントとか渡すねん。\n" + "ツッコミ：君にプレゼントがあるんだ。はい。気に入ってくれたかな。",
   funny_man: 'ボケ　　：私もあるよ。はい、口臭ケアセット。',
   straight_man: 'ツッコミ：ごめーん。ケアするわな。',
   page: 6,
@@ -187,7 +187,7 @@ AdminsJoke.create!(
 
 AdminsJoke.create!(
   genre_id: 1,
-  introduction: 'そしたらスマートにお会計するねん。あー良いよ。ここは俺が出すから。',
+  introduction: "ツッコミ：そしたらスマートにお会計するねん。\n" + "ツッコミ：あー良いよ。ここは俺が出すから。",
   funny_man: 'ボケ　　：あざーす！',
   straight_man: 'ツッコミ：体育会系！',
   page: 7,
@@ -195,7 +195,7 @@ AdminsJoke.create!(
 
 AdminsJoke.create!(
   genre_id: 1,
-  introduction: 'そしたらスマートにお会計するねん。あー良いよ。ここは俺が出すから。',
+  introduction: "ツッコミ：そしたらスマートにお会計するねん。\n" + "ツッコミ：あー良いよ。ここは俺が出すから。",
   funny_man: 'ボケ　　：良いよ私が出す！（手を相手の顔に当てる）。',
   straight_man: 'ツッコミ：当たってるよ！',
   page: 7,
@@ -203,7 +203,7 @@ AdminsJoke.create!(
 
 AdminsJoke.create!(
   genre_id: 1,
-  introduction: 'そしたらスマートにお会計するねん。あー良いよ。ここは俺が出すから。',
+  introduction: "ツッコミ：そしたらスマートにお会計するねん。\n" + "ツッコミ：あー良いよ。ここは俺が出すから。",
   funny_man: 'ボケ　　：あ、私端数だけ出すわ！１円２００枚あるから。',
   straight_man: 'ツッコミ：どんだけ持ってるねん！',
   page: 7,
@@ -211,7 +211,7 @@ AdminsJoke.create!(
 
 AdminsJoke.create!(
   genre_id: 1,
-  introduction: 'そしたら最後に次のデートの約束するねん。映画のチケットが２枚あるんだけど良かったらどうかな？',
+  introduction: "ツッコミ：そしたら最後に次のデートの約束するねん。\n" + "ツッコミ：映画のチケットが２枚あるんだけど良かったらどうかな？",
   funny_man: 'ボケ　　：え！２枚ともくれるのやったー！',
   straight_man: 'ツッコミ：違うわ！もうええわ！',
   page: 8,
@@ -219,7 +219,7 @@ AdminsJoke.create!(
 
 AdminsJoke.create!(
   genre_id: 1,
-  introduction: 'そしたら最後に次のデートの約束するねん。映画のチケットが２枚あるんだけど良かったらどうかな？',
+  introduction: "ツッコミ：そしたら最後に次のデートの約束するねん。\n" + "ツッコミ：映画のチケットが２枚あるんだけど良かったらどうかな？",
   funny_man: 'ボケ　　：私もうそれ見たんだよね。',
   straight_man: 'ツッコミ：そう言う時もある。',
   page: 8,
@@ -227,7 +227,7 @@ AdminsJoke.create!(
 
 AdminsJoke.create!(
   genre_id: 1,
-  introduction: 'そしたら最後に次のデートの約束するねん。映画のチケットが２枚あるんだけど良かったらどうかな？',
+  introduction: "ツッコミ：そしたら最後に次のデートの約束するねん。\n" + "ツッコミ：映画のチケットが２枚あるんだけど良かったらどうかな？",
   funny_man: 'ボケ　　：私その映画出てるよ！',
   straight_man: 'ツッコミ：すごいな！いい加減にしろ。',
   page: 8,
