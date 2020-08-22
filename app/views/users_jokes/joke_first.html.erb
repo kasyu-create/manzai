@@ -16,7 +16,7 @@
         <%= form_with(model: @usersjoke ,url: users_jokes_joke_middle_path(joke_book_id: @joke_book_id, genre_id: @genre_id, conto_page: @conto_page),method: :post, local: true) do |f| %>
 
         <%=f.hidden_field :introduction, value: @adminsjoke.last.introduction %>
-        <p style="font-size: 20px;"><%= @adminsjoke.last.introduction %></p>
+        <div style="font-size: 20px;"><%= sanitize(simple_format(@adminsjoke.last.introduction)) %></div>
         <br><br>
 
         <% @adminsjoke.each_with_index do |adminsjoke, index| %>
