@@ -27,7 +27,7 @@ Rails.application.routes.draw do
   get 'users_jokes/joke_last' => 'users_jokes#joke_last'
   post 'users_jokes/joke_last' => 'users_jokes#create'
 
-  resources :users, only: [:show, :index, :edit, :update]
+  resources :users, only: [:index, :edit, :update]
   get 'quit' => 'users#quit'
   patch 'users/withdraw' => 'users#withdraw'
   get 'users/joke_books/:id/:id' => 'joke_books#edit1'

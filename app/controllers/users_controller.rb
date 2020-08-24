@@ -4,9 +4,6 @@ class UsersController < ApplicationController
   # マイページへのアクション
   def index
     @user = current_user
-  end
-
-  def show
     user = current_user
     @joke_books = user.joke_books
   end
