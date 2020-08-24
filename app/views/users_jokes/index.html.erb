@@ -13,7 +13,7 @@
     <table class="table">
       <thead>
         <tr>
-          <th>ジャンル</th>
+          <th>番号</th>
           <th>ネタ</th>
         </tr>
       </thead>
@@ -23,7 +23,7 @@
         <% if genres.status == true %>
 
         <tr>
-          <td><%= genres.category %></td>
+          <td><%= genres.id %></td>
           <td><%= link_to genres.name, users_joke_path(genres.id) %></td>
         </tr>
 
