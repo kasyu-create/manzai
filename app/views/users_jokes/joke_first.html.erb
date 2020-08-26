@@ -17,25 +17,28 @@
 
         <%=f.hidden_field :introduction, value: @adminsjoke.last.introduction %>
         <div style="font-size: 20px;"><%= sanitize(simple_format(@adminsjoke.last.introduction)) %></div>
-        <br><br><br><br><br>
+
 
         <% @adminsjoke.each_with_index do |adminsjoke, index| %>
 
 
         <%=f.hidden_field :joke_book_id, value:@joke_book_id %>
 
-        <div class="joke_select">
+        <div class="joke_select" style="margin-top: 55px;">
 
 
          <%=f.radio_button :users_joke, adminsjoke.funny_man + "," + adminsjoke.straight_man,id:"users_joke_#{index}" %>
 
-         <p style="font-size: 20px;"><%=f.label :users_joke,"#{adminsjoke.funny_man}<br><br>#{adminsjoke.straight_man}".html_safe,for:"users_joke_#{index}"%><br>
+         <p style="font-size: 20px;"><%=f.label :users_joke,"#{adminsjoke.funny_man}<br><br>#{adminsjoke.straight_man}".html_safe,for:"users_joke_#{index}"%>
        </div></p>
-         <br><br><br><br><br><br><br><br><br>
+         <br><br><br><br>
 
 
         <% end %>
-        <%= f.submit('次へ',class: 'btn btn-primary btn-lg btn-block')%>
+
+        <div style="margin-top: 55px;">
+          <%= f.submit('次へ',class: 'btn btn-primary btn-lg btn-block')%>
+        </div>
         <% end %>
 
       </div>
