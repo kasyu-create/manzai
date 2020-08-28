@@ -14,14 +14,12 @@ class Admins::JokeTempletesController < ApplicationController
 
   def new
     @joke_templetes = JokeTemplete.new
-    @genre = Genre.find(params[:id])
   end
 
   def create
-    @genre = Genre.find(params[:id])
     @joke_templete = JokeTemplete.new(joke_templete_params)
       if @joke_templete.save
-        redirect_to admins_joke_templete_path(@genre.id)
+        redirect_to admins_plan_path
       else
       flash[:genre_created_error] = "ジャンル名を入力してください"
       redirect_to new_admins_boketukkomi_path
@@ -40,7 +38,7 @@ class Admins::JokeTempletesController < ApplicationController
   def update
     @joke_templete = JokeTemplete.find(params[:id])
     if @joke_templete.update(joke_templete_params)
-      redirect_to admins_path(@joke_templete)
+      redirect_to admins_joke_templete_path(@joke_templete)
       flash[:notice_update] = "情報を更新しました！"
     else
       redirect_to edit_admins_joke_templete_path(@joke_templete)
