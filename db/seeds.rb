@@ -41,7 +41,7 @@ Genre.create!(
    name: '刑事ドラマ',
 )
 
-AdminsJoke.create!(
+JokeTemplete.create!(
   genre_id: 1,
   introduction: "ボケ　　：デートって難しいよな。\n\n" + "ツッコミ：確かに難しいよな。じゃあ今から俺が男役でデートのやり方教えるわ。\n\n" + "ボケ　　：え、いいの。\n\n" + "ツッコミ：じゃあ車で迎えに行くから待っといて。\n\n" + "ツッコミ：キキー（車のブレーキ）ごめん待った？",
   funny_man: 'ボケ　　：ネタ合わせしよや。',
@@ -49,7 +49,7 @@ AdminsJoke.create!(
   page: 1,
 )
 
-AdminsJoke.create!(
+JokeTemplete.create!(
   genre_id: 1,
   introduction: "ボケ　　：デートって難しいよな。\n\n" + "ツッコミ：確かに難しいよな。じゃあ今から俺が男役でデートのやり方教えるわ。\n\n" + "ボケ　　：え、いいの。\n\n" + "ツッコミ：じゃあ車で迎えに行くから待っといて。\n\n" + "ツッコミ：キキー（車のブレーキ）ごめん待った？",
   funny_man: 'ボケ　　：おはようございます！',
@@ -57,7 +57,7 @@ AdminsJoke.create!(
   page: 1,
 )
 
-AdminsJoke.create!(
+JokeTemplete.create!(
   genre_id: 1,
   introduction: "ボケ　　：デートって難しいよな。\n\n" + "ツッコミ：確かに難しいよな。じゃあ今から俺が男役でデートのやり方教えるわ。\n\n" + "ボケ　　：え、いいの。\n\n" + "ツッコミ：じゃあ車で迎えに行くから待っといて。\n\n" + "ツッコミ：キキー（車のブレーキ）ごめん待った？",
   funny_man: 'ボケ　　：う、ううん（バレやすい嘘を言う感じで）。',
@@ -65,7 +65,7 @@ AdminsJoke.create!(
   page: 1,
 )
 
-AdminsJoke.create!(
+JokeTemplete.create!(
   genre_id: 1,
   introduction: 'ツッコミ：見てよ、この車。',
   funny_man: 'ボケ　　：すごーい。BMWのセダンだね！',
@@ -73,7 +73,7 @@ AdminsJoke.create!(
   page: 2,
 )
 
-AdminsJoke.create!(
+JokeTemplete.create!(
   genre_id: 1,
   introduction: 'ツッコミ：見てよ、この車。',
   funny_man: 'ボケ　　：すごーい。レンタカーだね！',
@@ -81,7 +81,7 @@ AdminsJoke.create!(
   page: 2,
 )
 
-AdminsJoke.create!(
+JokeTemplete.create!(
   genre_id: 1,
   introduction: 'ツッコミ：見てよ、この車。',
   funny_man: 'ボケ　　：すごーい。なんでトラクターで来たの〜？',
@@ -89,7 +89,7 @@ AdminsJoke.create!(
   page: 2,
 )
 
-AdminsJoke.create!(
+JokeTemplete.create!(
   genre_id: 1,
   introduction: 'ツッコミ：ブーン（車を運転する音）。どう乗り心地は？',
   funny_man: 'ボケ　　：（スマホいじりまくってる）。',
@@ -97,7 +97,7 @@ AdminsJoke.create!(
   page: 3,
 )
 
-AdminsJoke.create!(
+JokeTemplete.create!(
   genre_id: 1,
   introduction: 'ツッコミ：ブーン（車を運転する音）。どう乗り心地は？',
   funny_man: 'ボケ　　：（既に寝てる）',
@@ -105,7 +105,7 @@ AdminsJoke.create!(
   page: 3,
 )
 
-AdminsJoke.create!(
+JokeTemplete.create!(
   genre_id: 1,
   introduction: 'ツッコミ：ブーン（車を運転する音）。どう乗り心地は？',
   funny_man: 'ボケ　　：（化粧しまくる）。',
@@ -113,7 +113,7 @@ AdminsJoke.create!(
   page: 3,
 )
 
-AdminsJoke.create!(
+JokeTemplete.create!(
   genre_id: 1,
   introduction: "ツッコミ：キキー（車のブレーキの音）。\n\n" + "ツッコミ：どうここ？落ち着いた雰囲気で良いでしょ。喜んでくれたかな？",
   funny_man: 'ボケ　　：え、なんて？',
@@ -121,7 +121,7 @@ AdminsJoke.create!(
   page: 4,
 )
 
-AdminsJoke.create!(
+JokeTemplete.create!(
   genre_id: 1,
   introduction: "ツッコミ：キキー（車のブレーキの音）。\n\n" + "ツッコミ：どうここ？落ち着いた雰囲気で良いでしょ。喜んでくれたかな？",
   funny_man: 'ボケ　　：すごーい。大きい図書館ね。',
@@ -129,7 +129,7 @@ AdminsJoke.create!(
   page: 4,
 )
 
-AdminsJoke.create!(
+JokeTemplete.create!(
   genre_id: 1,
   introduction: "ツッコミ：キキー（車のブレーキの音）。\n\n" + "ツッコミ：どうここ？落ち着いた雰囲気で良いでしょ。喜んでくれたかな？",
   funny_man: 'ボケ　　：ブーン（車パクって逃げる）。',
@@ -137,7 +137,7 @@ AdminsJoke.create!(
   page: 4,
 )
 
-AdminsJoke.create!(
+JokeTemplete.create!(
   genre_id: 1,
   introduction: 'ツッコミ：そしたら２人レストランの席に座ったら綺麗な夜景が広がってるわけや。',
   funny_man: 'ボケ　　：綺麗ね。でもこの夜景より私の方が綺麗ね。',
@@ -145,7 +145,7 @@ AdminsJoke.create!(
   page: 5,
 )
 
-AdminsJoke.create!(
+JokeTemplete.create!(
   genre_id: 1,
   introduction: 'ツッコミ：そしたら２人レストランの席に座ったら綺麗な夜景が広がってるわけや。',
   funny_man: 'ボケ　　：この夜景より君の方がずっと綺麗だよ。',
@@ -153,7 +153,7 @@ AdminsJoke.create!(
   page: 5,
 )
 
-AdminsJoke.create!(
+JokeTemplete.create!(
   genre_id: 1,
   introduction: 'ツッコミ：そしたら２人レストランの席に座ったら綺麗な夜景が広がってるわけや。',
   funny_man: 'ボケ　　：すごーい。たくさん工場がある〜。',
@@ -161,7 +161,7 @@ AdminsJoke.create!(
   page: 5,
 )
 
-AdminsJoke.create!(
+JokeTemplete.create!(
   genre_id: 1,
   introduction: "ツッコミ：ほんで料理が終わったらプレゼントとか渡すねん。\n\n" + "ツッコミ：君にプレゼントがあるんだ。はい。気に入ってくれたかな。",
   funny_man: 'ボケ　　：え！さっきの車の鍵！ありがとう！',
@@ -169,7 +169,7 @@ AdminsJoke.create!(
   page: 6,
 )
 
-AdminsJoke.create!(
+JokeTemplete.create!(
   genre_id: 1,
   introduction: "ツッコミ：ほんで料理が終わったらプレゼントとか渡すねん。\n\n" + "ツッコミ：君にプレゼントがあるんだ。はい。気に入ってくれたかな。",
   funny_man: 'ボケ　　：え、犬！？',
@@ -177,7 +177,7 @@ AdminsJoke.create!(
   page: 6,
 )
 
-AdminsJoke.create!(
+JokeTemplete.create!(
   genre_id: 1,
   introduction: "ツッコミ：ほんで料理が終わったらプレゼントとか渡すねん。\n\n" + "ツッコミ：君にプレゼントがあるんだ。はい。気に入ってくれたかな。",
   funny_man: 'ボケ　　：私もあるよ。はい、口臭ケアセット。',
@@ -185,7 +185,7 @@ AdminsJoke.create!(
   page: 6,
 )
 
-AdminsJoke.create!(
+JokeTemplete.create!(
   genre_id: 1,
   introduction: "ツッコミ：そしたらスマートにお会計するねん。\n\n" + "ツッコミ：あー良いよ。ここは俺が出すから。",
   funny_man: 'ボケ　　：あざーす！',
@@ -193,7 +193,7 @@ AdminsJoke.create!(
   page: 7,
 )
 
-AdminsJoke.create!(
+JokeTemplete.create!(
   genre_id: 1,
   introduction: "ツッコミ：そしたらスマートにお会計するねん。\n\n" + "ツッコミ：あー良いよ。ここは俺が出すから。",
   funny_man: 'ボケ　　：良いよ私が出す！（手を相手の顔に当てる）。',
@@ -201,7 +201,7 @@ AdminsJoke.create!(
   page: 7,
 )
 
-AdminsJoke.create!(
+JokeTemplete.create!(
   genre_id: 1,
   introduction: "ツッコミ：そしたらスマートにお会計するねん。\n\n" + "ツッコミ：あー良いよ。ここは俺が出すから。",
   funny_man: 'ボケ　　：あ、私端数だけ出すわ！１円２００枚あるから。',
@@ -209,7 +209,7 @@ AdminsJoke.create!(
   page: 7,
 )
 
-AdminsJoke.create!(
+JokeTemplete.create!(
   genre_id: 1,
   introduction: "ツッコミ：最後に次のデートの約束するねん。\n\n" + "ツッコミ：映画のチケットが２枚あるんだけど良かったらどうかな？",
   funny_man: 'ボケ　　：え！２枚ともくれるのやったー！',
@@ -217,7 +217,7 @@ AdminsJoke.create!(
   page: 8,
 )
 
-AdminsJoke.create!(
+JokeTemplete.create!(
   genre_id: 1,
   introduction: "ツッコミ：最後に次のデートの約束するねん。\n\n" + "ツッコミ：映画のチケットが２枚あるんだけど良かったらどうかな？",
   funny_man: 'ボケ　　：私もうそれ見たんだよね。',
@@ -225,7 +225,7 @@ AdminsJoke.create!(
   page: 8,
 )
 
-AdminsJoke.create!(
+JokeTemplete.create!(
   genre_id: 1,
   introduction: "ツッコミ：最後に次のデートの約束するねん。\n\n" + "ツッコミ：映画のチケットが２枚あるんだけど良かったらどうかな？",
   funny_man: 'ボケ　　：私その映画出てるよ！',
@@ -233,7 +233,7 @@ AdminsJoke.create!(
   page: 8,
 )
 
-AdminsJoke.create!(
+JokeTemplete.create!(
   genre_id: 2,
   introduction: "ツッコミ：恋愛ドラマって面白いよな。\n\n" + "ボケ　　：確かにな。\n\n" + "ツッコミ：そしたら俺今から恋愛ドラマの男側やるからヒロインやって。",
   funny_man: 'ボケ　　：無理の反対〜',
@@ -241,7 +241,7 @@ AdminsJoke.create!(
   page: 1,
 )
 
-AdminsJoke.create!(
+JokeTemplete.create!(
   genre_id: 2,
   introduction: "ツッコミ：恋愛ドラマって面白いよな。\n\n" + "ボケ　　：確かにな。\n\n" + "ツッコミ：そしたら俺今から恋愛ドラマの男側やるからヒロインやって。",
   funny_man: 'ボケ　　：誰が見たいねん',
@@ -249,7 +249,7 @@ AdminsJoke.create!(
   page: 1,
 )
 
-AdminsJoke.create!(
+JokeTemplete.create!(
   genre_id: 2,
   introduction: "ツッコミ：恋愛ドラマって面白いよな。\n\n" + "ボケ　　：確かにな。\n\n" + "ツッコミ：そしたら俺今から恋愛ドラマの男側やるからヒロインやって。",
   funny_man: 'ボケ　　：適役やな',
@@ -257,7 +257,7 @@ AdminsJoke.create!(
   page: 1,
 )
 
-AdminsJoke.create!(
+JokeTemplete.create!(
   genre_id: 2,
   introduction: "ツッコミ：まず初めに上京したてのヒロインが街角で後に結ばれる男性と出会う訳や。\n\n" + "ツッコミ：あ、お嬢さんハンカチ落としましたよ。",
   funny_man: 'ボケ　　：（訛った言葉を言う）',
@@ -265,7 +265,7 @@ AdminsJoke.create!(
   page: 2,
 )
 
-AdminsJoke.create!(
+JokeTemplete.create!(
   genre_id: 2,
   introduction: "ツッコミ：まず初めに上京したてのヒロインが街角で後に結ばれる男性と出会う訳や。\n\n" + "ツッコミ：あ、お嬢さんハンカチ落としましたよ。",
   funny_man: 'ボケ　　：（めちゃめちゃハンカチ落とす）',
@@ -273,7 +273,7 @@ AdminsJoke.create!(
   page: 2,
 )
 
-AdminsJoke.create!(
+JokeTemplete.create!(
   genre_id: 2,
   introduction: "ツッコミ：まず初めに上京したてのヒロインが街角で後に結ばれる男性と出会う訳や。\n\n" + "ツッコミ：あ、お嬢さんハンカチ落としましたよ。",
   funny_man: 'ボケ　　：まぁ、ありがとう。（他の人にも）ありがとうございます。（さらに違う他の人にも）あ、ありがとうございます。あ、イケメン。',
@@ -281,7 +281,7 @@ AdminsJoke.create!(
   page: 2,
 )
 
-AdminsJoke.create!(
+JokeTemplete.create!(
   genre_id: 2,
   introduction: "ツッコミ：その後に、仕事でミスしたヒロインがバーに行って街角で出会った男性と再会する訳や。\n\n" + "ツッコミ：あ、君は朝出会った。",
   funny_man: 'ボケ　　：（隣の人とイチャイチャする）',
@@ -289,7 +289,7 @@ AdminsJoke.create!(
   page: 3,
 )
 
-AdminsJoke.create!(
+JokeTemplete.create!(
   genre_id: 2,
   introduction: "ツッコミ：その後に、仕事でミスしたヒロインがバーに行って街角で出会った男性と再会する訳や。\n\n" + "ツッコミ：あ、君は朝出会った。",
   funny_man: 'ボケ　　：（ベロンベロンに酔い潰れている）',
@@ -297,7 +297,7 @@ AdminsJoke.create!(
   page: 3,
 )
 
-AdminsJoke.create!(
+JokeTemplete.create!(
   genre_id: 2,
   introduction: "ツッコミ：その後に、仕事でミスしたヒロインがバーに行って街角で出会った男性と再会する訳や。\n\n" + "ツッコミ：あ、君は朝出会った。",
   funny_man: 'ボケ　　：いらっしゃいませー。',
@@ -305,7 +305,7 @@ AdminsJoke.create!(
   page: 3,
 )
 
-AdminsJoke.create!(
+JokeTemplete.create!(
   genre_id: 2,
   introduction: "ツッコミ：その後も何回もバーで出会ってヒロインが相手の男のダンディーさに惹かれていくわけや。\n\n" + "ツッコミ：やぁ、また会ったね。",
   funny_man: 'ボケ　　：あ、○○さん。私今日自分の仕事が経理なのに間違って営業行っちゃったの。',
@@ -313,7 +313,7 @@ AdminsJoke.create!(
   page: 4,
 )
 
-AdminsJoke.create!(
+JokeTemplete.create!(
   genre_id: 2,
   introduction: "ツッコミ：その後も何回もバーで出会ってヒロインが相手の男のダンディーさに惹かれていくわけや。\n\n" + "ツッコミ：やぁ、また会ったね。",
   funny_man: 'ボケ　　：あ、○○さん。私今日なんでか分からないけど、会社のお金シュレッターにかけてしまって。',
@@ -321,7 +321,7 @@ AdminsJoke.create!(
   page: 4,
 )
 
-AdminsJoke.create!(
+JokeTemplete.create!(
   genre_id: 2,
   introduction: "ツッコミ：その後も何回もバーで出会ってヒロインが相手の男のダンディーさに惹かれていくわけや。\n\n" + "ツッコミ：やぁ、また会ったね。",
   funny_man: 'ボケ　　：あ、○○さん。今、マスターいない間に店のワインのコルク全部開けてたんだけど一緒にやる？',
@@ -329,7 +329,7 @@ AdminsJoke.create!(
   page: 4,
 )
 
-AdminsJoke.create!(
+JokeTemplete.create!(
   genre_id: 2,
   introduction: "ツッコミ：そしたら連絡先交換して海にデートとか行ってはしゃぐねんな。\n\n" + "ツッコミ：待て待て〜。",
   funny_man: 'ボケ　　：（タバコくわえながら）あはは〜（タバコポイ捨てする）',
@@ -337,7 +337,7 @@ AdminsJoke.create!(
   page: 5,
 )
 
-AdminsJoke.create!(
+JokeTemplete.create!(
   genre_id: 2,
   introduction: "ツッコミ：そしたら連絡先交換して海にデートとか行ってはしゃぐねんな。\n\n" + "ツッコミ：待て待て〜。",
   funny_man: 'ボケ　　：（待て待て〜と言ってる男を撮る）カシャ、ほら見てあなたが楽しんで様子を呟いたの。「ストーカーなう」って。',
@@ -345,7 +345,7 @@ AdminsJoke.create!(
   page: 5,
 )
 
-AdminsJoke.create!(
+JokeTemplete.create!(
   genre_id: 2,
   introduction: "ツッコミ：そしたら連絡先交換して海にデートとか行ってはしゃぐねんな。\n\n" + "ツッコミ：待て待て〜。",
   funny_man: 'ボケ　　：ちょっと何してんの。笑　今お互いサーフィンしてるんだから。',
@@ -353,7 +353,7 @@ AdminsJoke.create!(
   page: 5,
 )
 
-AdminsJoke.create!(
+JokeTemplete.create!(
   genre_id: 2,
   introduction: "ツッコミ：そしたらお互い水掛け合うねんな。\n\n" + "ツッコミ：それ〜。（水をかける）",
   funny_man: 'ボケ　　：おらぁぁあぁ！',
@@ -361,7 +361,7 @@ AdminsJoke.create!(
   page: 6,
 )
 
-AdminsJoke.create!(
+JokeTemplete.create!(
   genre_id: 2,
   introduction: "ツッコミ：そしたらお互い水掛け合うねんな。\n\n" + "ツッコミ：それ〜。（水をかける）",
   funny_man: 'ボケ　　：プシュー（男側の腕を上げ、脇にスプレーをする）',
@@ -369,7 +369,7 @@ AdminsJoke.create!(
   page: 6,
 )
 
-AdminsJoke.create!(
+JokeTemplete.create!(
   genre_id: 2,
   introduction: "ツッコミ：そしたらお互い水掛け合うねんな。\n\n" + "ツッコミ：それ〜。（水をかける）",
   funny_man: 'ボケ　　：（肩に水鉄砲を担ぐ）よいしょ、はい、撃ちまーす。',
@@ -377,7 +377,7 @@ AdminsJoke.create!(
   page: 6,
 )
 
-AdminsJoke.create!(
+JokeTemplete.create!(
   genre_id: 2,
   introduction: 'ツッコミ：そしたら都合悪くデート中で元カノと出くわすねんな。',
   funny_man: 'ボケ　　：え、お母さん？何しに来たの？',
@@ -385,7 +385,7 @@ AdminsJoke.create!(
   page: 7,
 )
 
-AdminsJoke.create!(
+JokeTemplete.create!(
   genre_id: 2,
   introduction: 'ツッコミ：そしたら都合悪くデート中で元カノと出くわすねんな。',
   funny_man: 'ボケ　　：（元カノ役をする）どーもー元カノでーす。それじゃあ今から一緒に海で遊ぼうか！',
@@ -393,7 +393,7 @@ AdminsJoke.create!(
   page: 7,
 )
 
-AdminsJoke.create!(
+JokeTemplete.create!(
   genre_id: 2,
   introduction: 'ツッコミ：そしたら都合悪くデート中で元カノと出くわすねんな。',
   funny_man: 'ボケ　　：え、あなたの元カノってテイラー・スウィフト？',
@@ -401,7 +401,7 @@ AdminsJoke.create!(
   page: 7,
 )
 
-AdminsJoke.create!(
+JokeTemplete.create!(
   genre_id: 2,
   introduction: "ツッコミ：最後に彼女は恋が終わったと勘違いして、仕事もミスばっかで落ち込んで、田舎に帰る所を俺が止める場面や。\n\n" + "ツッコミ：おい！待てよ！俺は〇〇ちゃんが好きだ。付き合って欲しい！",
   funny_man: 'ボケ　　：（イヤホンしている）え、なんて？',
@@ -409,7 +409,7 @@ AdminsJoke.create!(
   page: 8,
 )
 
-AdminsJoke.create!(
+JokeTemplete.create!(
   genre_id: 2,
   introduction: "ツッコミ：最後に彼女は恋が終わったと勘違いして、仕事もミスばっかで落ち込んで、田舎に帰る所を俺が止める場面や。\n\n" + "ツッコミ：おい！待てよ！俺は〇〇ちゃんが好きだ。付き合って欲しい！",
   funny_man: 'ボケ　　：私のどこが良いの！？靴下の片方はすぐ無くす。自転車のサドルはすぐ盗むし、壁にはすぐスプレーで落書きする私のどこが良いのよ！',
@@ -417,7 +417,7 @@ AdminsJoke.create!(
   page: 8,
 )
 
-AdminsJoke.create!(
+JokeTemplete.create!(
   genre_id: 2,
   introduction: "ツッコミ：最後に彼女は恋が終わったと勘違いして、仕事もミスばっかで落ち込んで、田舎に帰る所を俺が止める場面や。\n\n" + "ツッコミ：おい！待てよ！俺は〇〇ちゃんが好きだ。付き合って欲しい！",
   funny_man: 'ボケ　　：（コイントスする）裏か。ダメ。',
@@ -425,7 +425,7 @@ AdminsJoke.create!(
   page: 8,
 )
 
-AdminsJoke.create!(
+JokeTemplete.create!(
   genre_id: 3,
   introduction: "ボケ　　：いや〜教師ってカッコイイよな。\n\n" + "ツッコミ：まぁ、学園ドラマとか人気だしな。\n\n" + "ボケ　　：それでさ、俺今から不良を改心させる新任熱血教師やるから不良やってよ。\n\n" + "ツッコミ：最初の出会いは登校中で他の生徒いじめてる所で出会うんだよな。\n\n" + "ツッコミ：おい、お前金出せよ。嘘付くなよ、飛んでみろよ。金出せよ。",
   funny_man: 'ボケ　　：おい、お前ら校長室で何やってるんだ。',
@@ -433,7 +433,7 @@ AdminsJoke.create!(
   page: 1,
 )
 
-AdminsJoke.create!(
+JokeTemplete.create!(
   genre_id: 3,
   introduction: "ボケ　　：いや〜教師ってカッコイイよな。\n\n" + "ツッコミ：まぁ、学園ドラマとか人気だしな。\n\n" + "ボケ　　：それでさ、俺今から不良を改心させる新任熱血教師やるから不良やってよ。\n\n" + "ツッコミ：最初の出会いは登校中で他の生徒いじめてる所で出会うんだよな。\n\n" + "ツッコミ：おい、お前金出せよ。嘘付くなよ、飛んでみろよ。金出せよ。",
   funny_man: 'ボケ　　：おぉ！楽しそうだな！先生も混ぜてくれ！',
@@ -441,7 +441,7 @@ AdminsJoke.create!(
   page: 1,
 )
 
-AdminsJoke.create!(
+JokeTemplete.create!(
   genre_id: 3,
   introduction: "ボケ　　：いや〜教師ってカッコイイよな。\n\n" + "ツッコミ：まぁ、学園ドラマとか人気だしな。\n\n" + "ボケ　　：それでさ、俺今から不良を改心させる新任熱血教師やるから不良やってよ。\n\n" + "ツッコミ：最初の出会いは登校中で他の生徒いじめてる所で出会うんだよな。\n\n" + "ツッコミ：おい、お前金出せよ。嘘付くなよ、飛んでみろよ。金出せよ。",
   funny_man: 'ボケ　　：なんだなんだ？共同募金か？いい奴らだなぁ。',
@@ -449,7 +449,7 @@ AdminsJoke.create!(
   page: 1,
 )
 
-AdminsJoke.create!(
+JokeTemplete.create!(
   genre_id: 3,
   introduction: "ボケ　　：なんだお前らいじめてんのか？\n" + "ツッコミ：なんだよ。悪りぃかよ。言っとくけどな、俺の親父体に絵がある職業だからよ、お前になんかあっても知らねぇかんな。",
   funny_man: 'ボケ　　：なるほど、デザイナーか。',
@@ -457,7 +457,7 @@ AdminsJoke.create!(
   page: 2,
 )
 
-AdminsJoke.create!(
+JokeTemplete.create!(
   genre_id: 3,
   introduction: "ボケ　　：なんだお前らいじめてんのか？\n" + "ツッコミ：なんだよ。悪りぃかよ。言っとくけどな、俺の親父体に絵がある職業だからよ、お前になんかあっても知らねぇかんな。",
   funny_man: 'ボケ　　：モデルさんか。',
@@ -465,7 +465,7 @@ AdminsJoke.create!(
   page: 2,
 )
 
-AdminsJoke.create!(
+JokeTemplete.create!(
   genre_id: 3,
   introduction: "ボケ　　：なんだお前らいじめてんのか？\n \n" + "ツッコミ：なんだよ。悪りぃかよ。言っとくけどな、俺の親父体に絵がある職業だからよ、お前になんかあっても知らねぇかんな。",
   funny_man: 'ボケ　　：絵描きさんか。',
@@ -473,7 +473,7 @@ AdminsJoke.create!(
   page: 2,
 )
 
-AdminsJoke.create!(
+JokeTemplete.create!(
   genre_id: 3,
   introduction: "ボケ　　：そんな事よりなんだタバコ吸って。\n\n" + "ツッコミ：ちっ、うっせーな。",
   funny_man: 'ボケ　　：未成年はタバコを吸ったらな、一歩間違えたら犯罪なんだぞ！',
@@ -481,7 +481,7 @@ AdminsJoke.create!(
   page: 3,
 )
 
-AdminsJoke.create!(
+JokeTemplete.create!(
   genre_id: 3,
   introduction: "ボケ　　：そんな事よりなんだタバコ吸って。\n\n" + "ツッコミ：ちっ、うっせーな。",
   funny_man: 'ボケ　　：タバコは美味しいなぁ。',
@@ -489,7 +489,7 @@ AdminsJoke.create!(
   page: 3,
 )
 
-AdminsJoke.create!(
+JokeTemplete.create!(
   genre_id: 3,
   introduction: "ボケ　　：そんな事よりなんだタバコ吸って。\n\n" + "ツッコミ：ちっ、うっせーな。",
   funny_man: 'ボケ　　：そんな声大きくねぇだろ！',
@@ -497,7 +497,7 @@ AdminsJoke.create!(
   page: 3,
 )
 
-AdminsJoke.create!(
+JokeTemplete.create!(
   genre_id: 3,
   introduction: 'ツッコミ：そしたら後で教室で再会すんねん。',
   funny_man: 'ボケ　　：おーあの時はどうも！',
@@ -505,7 +505,7 @@ AdminsJoke.create!(
   page: 4,
 )
 
-AdminsJoke.create!(
+JokeTemplete.create!(
   genre_id: 3,
   introduction: 'ツッコミ：そしたら後で教室で再会すんねん。',
   funny_man: 'ボケ　　：再来年このクラスを担任となる、、',
@@ -513,7 +513,7 @@ AdminsJoke.create!(
   page: 4,
 )
 
-AdminsJoke.create!(
+JokeTemplete.create!(
   genre_id: 3,
   introduction: 'ツッコミ：そしたら後で教室で再会すんねん。',
   funny_man: 'ボケ　　：ガラガラ（ドアを開ける音）誰だぁ、ドアにチェンソー挟んだやつは。',
@@ -521,7 +521,7 @@ AdminsJoke.create!(
   page: 4,
 )
 
-AdminsJoke.create!(
+JokeTemplete.create!(
   genre_id: 3,
   introduction: "ツッコミ：そこはもう。「今日から担任になった○○だ。よろしく」とか言うねん。\n\n" + "ボケ　　：今日からこのクラスの担任になった○○だ。よろしく。",
   funny_man: 'ボケ　　：おい、○○！お前以外男子全員。好きな子のリコーダーを舐めてるぞ。',
@@ -529,7 +529,7 @@ AdminsJoke.create!(
   page: 5,
 )
 
-AdminsJoke.create!(
+JokeTemplete.create!(
   genre_id: 3,
   introduction: "ツッコミ：そこはもう。「今日から担任になった○○だ。よろしく」とか言うねん。\n\n" + "ボケ　　：今日からこのクラスの担任になった○○だ。よろしく。",
   funny_man: 'ボケ　　：おいお前ら席につけ。席につけと言っているんだ！バンっ！！（教卓を叩くが教卓の高さが以上に低い）',
@@ -537,7 +537,7 @@ AdminsJoke.create!(
   page: 5,
 )
 
-AdminsJoke.create!(
+JokeTemplete.create!(
   genre_id: 3,
   introduction: "ツッコミ：そこはもう。「今日から担任になった○○だ。よろしく」とか言うねん。\n\n" + "ボケ　　：今日からこのクラスの担任になった○○だ。よろしく。",
   funny_man: 'ボケ　　：えー出席をとる。植村ダニエル。松本ソフィア。アレクサンダー吉田。',
@@ -545,7 +545,7 @@ AdminsJoke.create!(
   page: 5,
 )
 
-AdminsJoke.create!(
+JokeTemplete.create!(
   genre_id: 3,
   introduction: "ツッコミ：そしたらさっきあったヤンキーをいじめの件で先生が呼び出すだよな。\n\n" + "ツッコミ：なんだテメェよ。",
   funny_man: 'ボケ　　：おい！お前！タバコくれ。',
@@ -553,7 +553,7 @@ AdminsJoke.create!(
   page: 6,
 )
 
-AdminsJoke.create!(
+JokeTemplete.create!(
   genre_id: 3,
   introduction: "ツッコミ：そしたらさっきあったヤンキーをいじめの件で先生が呼び出すだよな。\n\n" + "ツッコミ：なんだテメェよ。",
   funny_man: 'ボケ　　：すまんな、女子更衣室なんかに呼び出して。',
@@ -561,7 +561,7 @@ AdminsJoke.create!(
   page: 6,
 )
 
-AdminsJoke.create!(
+JokeTemplete.create!(
   genre_id: 3,
   introduction: "ツッコミ：そしたらさっきあったヤンキーをいじめの件で先生が呼び出すだよな。\n\n" + "ツッコミ：なんだテメェよ。",
   funny_man: 'ボケ　　：笑ってるとこすまんな。',
@@ -569,7 +569,7 @@ AdminsJoke.create!(
   page: 6,
 )
 
-AdminsJoke.create!(
+JokeTemplete.create!(
   genre_id: 3,
   introduction: "ツッコミ：そしたら他校からヤンキーが乗り込んでくるんだよな。\n\n" + "ツッコミ：あいつら乗り込んで来やがった！",
   funny_man: 'ボケ　　：先公をバカにするのも上等…！ケンカをするのも上等…！けどな…卑怯な真似だけはするんじゃねぇよ！正々堂々胸を張って不良やりあがれってんだ！！',
@@ -577,7 +577,7 @@ AdminsJoke.create!(
   page: 7,
 )
 
-AdminsJoke.create!(
+JokeTemplete.create!(
   genre_id: 3,
   introduction: "ツッコミ：そしたら他校からヤンキーが乗り込んでくるんだよな。\n\n" + "ツッコミ：あいつら乗り込んで来やがった！",
   funny_man: 'ボケ　　：お前ら！キックボードで乗り込んで来やがって！',
@@ -585,7 +585,7 @@ AdminsJoke.create!(
   page: 7,
 )
 
-AdminsJoke.create!(
+JokeTemplete.create!(
   genre_id: 3,
   introduction: "ツッコミ：そしたら他校からヤンキーが乗り込んでくるんだよな。\n\n" + "ツッコミ：あいつら乗り込んで来やがった！",
   funny_man: 'ボケ　　：御茶ノ水女子高校のやつらが乗り込んで来やがった！',
@@ -593,7 +593,7 @@ AdminsJoke.create!(
   page: 7,
 )
 
-AdminsJoke.create!(
+JokeTemplete.create!(
   genre_id: 3,
   introduction: 'ツッコミ：最後に他校のヤンキーを倒して、感動してる生徒に最後一言言うねん。',
   funny_man: 'ボケ　　：かつてこうやってヤンキーと喧嘩してたけど、こうやって教師をしている人がいる。そう今の話はドラマだ。',
@@ -601,7 +601,7 @@ AdminsJoke.create!(
   page: 8,
 )
 
-AdminsJoke.create!(
+JokeTemplete.create!(
   genre_id: 3,
   introduction: 'ツッコミ：最後に他校のヤンキーを倒して、感動してる生徒に最後一言言うねん。',
   funny_man: 'ボケ　　：俺の生徒は死んでも守る。でも、お前は素行が悪いから退学だ。',
@@ -609,7 +609,7 @@ AdminsJoke.create!(
   page: 8,
 )
 
-AdminsJoke.create!(
+JokeTemplete.create!(
   genre_id: 3,
   introduction: 'ツッコミ：最後に他校のヤンキーを倒して、感動してる生徒に最後一言言うねん。',
   funny_man: 'ボケ　　：俺の生徒に手を出すんじゃねぇよ！俺は女子生徒に手を出したけどな！',
@@ -617,7 +617,7 @@ AdminsJoke.create!(
   page: 8,
 )
 
-AdminsJoke.create!(
+JokeTemplete.create!(
   genre_id: 4,
   introduction: "ツッコミ：いやー刑事ドラマって格好いいよね。\n\n" + "ボケ　　：確かにな。\n\n" + "ツッコミ：ちょっと俺刑事役やりたいからちょっと付き合ってくれへん？\n\n" + "ボケ　　：うん、分かった。\n\n" + "ツッコミ：「状況はどうなっている！？」",
   funny_man: 'ボケ　　：はい！犯人はよっちゃんいかを万引きして逃亡しています！',
@@ -625,7 +625,7 @@ AdminsJoke.create!(
   page: 1,
 )
 
-AdminsJoke.create!(
+JokeTemplete.create!(
   genre_id: 4,
   introduction: "ツッコミ：いやー刑事ドラマって格好いいよね。\n\n" + "ボケ　　：確かにな。\n\n" + "ツッコミ：ちょっと俺刑事役やりたいからちょっと付き合ってくれへん？\n\n" + "ボケ　　：うん、分かった。\n\n" + "ツッコミ：「状況はどうなっている！？」",
   funny_man: 'ボケ　　：はい！犯人は逮捕されました。',
@@ -633,7 +633,7 @@ AdminsJoke.create!(
   page: 1,
 )
 
-AdminsJoke.create!(
+JokeTemplete.create!(
   genre_id: 4,
   introduction: "ツッコミ：いやー刑事ドラマって格好いいよね。\n\n" + "ボケ　　：確かにな。\n\n" + "ツッコミ：ちょっと俺刑事役やりたいからちょっと付き合ってくれへん？\n\n" + "ボケ　　：うん、分かった。\n\n" + "ツッコミ：「状況はどうなっている！？」",
   funny_man: 'ボケ　　：はい！犯人はディズニーランドに潜伏中みたいです！',
@@ -641,7 +641,7 @@ AdminsJoke.create!(
   page: 1,
 )
 
-AdminsJoke.create!(
+JokeTemplete.create!(
   genre_id: 4,
   introduction: 'ツッコミ：犯人の特徴は？',
   funny_man: 'ボケ　　：はい、年齢は２０代から６０代。男性かも女性かもしれないとされています。',
@@ -649,7 +649,7 @@ AdminsJoke.create!(
   page: 2,
 )
 
-AdminsJoke.create!(
+JokeTemplete.create!(
   genre_id: 4,
   introduction: 'ツッコミ：犯人の特徴は？',
   funny_man: 'ボケ　　：はい、最近、白髪が増えてきて困ってる見たいです。',
@@ -657,7 +657,7 @@ AdminsJoke.create!(
   page: 2,
 )
 
-AdminsJoke.create!(
+JokeTemplete.create!(
   genre_id: 4,
   introduction: 'ツッコミ：犯人の特徴は？',
   funny_man: 'ボケ　　：はい、「知り合いに有名人がいる」などと、友達によく自慢してたそうです。',
@@ -665,7 +665,7 @@ AdminsJoke.create!(
   page: 2,
 )
 
-AdminsJoke.create!(
+JokeTemplete.create!(
   genre_id: 4,
   introduction: "ボケ　　：（電話がなる）ガチャ。もしもし、、、大変です！犯人から「早く捕まえろよ」と煽りの電話です！\n\n" + "ツッコミ：何！？クソォ！よし、応援を頼もう。",
   funny_man: 'ボケ　　：分かりました！（犯人に）応援を頼む！',
@@ -673,7 +673,7 @@ AdminsJoke.create!(
   page: 3,
 )
 
-AdminsJoke.create!(
+JokeTemplete.create!(
   genre_id: 4,
   introduction: "ボケ　　：（電話がなる）ガチャ。もしもし、、、大変です！犯人から「早く捕まえろよ」と煽りの電話です！\n\n" + "ツッコミ：何！？クソォ！よし、応援を頼もう。",
   funny_man: 'ボケ　　：おい、どこにいるんだ！？探すの面倒くさいから言え！',
@@ -681,7 +681,7 @@ AdminsJoke.create!(
   page: 3,
 )
 
-AdminsJoke.create!(
+JokeTemplete.create!(
   genre_id: 4,
   introduction: "ボケ　　：（電話がなる）ガチャ。もしもし、、、大変です！犯人から「早く捕まえろよ」と煽りの電話です！\n\n" + "ツッコミ：何！？クソォ！よし、応援を頼もう。",
   funny_man: 'ボケ　　：おい！なんで自転車のサドルなんか盗んだんだ！',
@@ -690,7 +690,7 @@ AdminsJoke.create!(
   page: 3,
 )
 
-AdminsJoke.create!(
+JokeTemplete.create!(
   genre_id: 4,
   introduction: "ツッコミ：そしたら今度は張り込みして、犯人を突き止める訳や。\n\n" + "ツッコミ：良いか。犯人ってのはな必ず現場に戻ってくるんだ。",
   funny_man: 'ボケ　　：しかし、山さん。人が人を殺しますかね。',
@@ -698,7 +698,7 @@ AdminsJoke.create!(
   page: 4,
 )
 
-AdminsJoke.create!(
+JokeTemplete.create!(
   genre_id: 4,
   introduction: "ツッコミ：そしたら今度は張り込みして、犯人を突き止める訳や。\n\n" + "ツッコミ：良いか。犯人ってのはな必ず現場に戻ってくるんだ。",
   funny_man: 'ボケ　　：山さん！おにぎりとルー買ってきました。',
@@ -706,7 +706,7 @@ AdminsJoke.create!(
   page: 4,
 )
 
-AdminsJoke.create!(
+JokeTemplete.create!(
   genre_id: 4,
   introduction: "ツッコミ：そしたら今度は張り込みして、犯人を突き止める訳や。\n\n" + "ツッコミ：良いか。犯人ってのはな必ず現場に戻ってくるんだ。",
   funny_man: 'ボケ　　：しかし、警察署内で犯行を起こすなんて。',
@@ -714,7 +714,7 @@ AdminsJoke.create!(
   page: 4,
 )
 
-AdminsJoke.create!(
+JokeTemplete.create!(
   genre_id: 4,
   introduction: "ボケ　　：大変です！犯人が我々に気付いて車に乗って逃走しています。\n\n" + "ツッコミ：何！？よし、タクシーに乗るぞ！すいません！あの車を追ってください！",
   funny_man: 'ボケ　　：（タクシー運転手役で）任せてください！僕はスピード違反99回していますのでスピードには自信があります！ですが、今回で100回目になりそうですがね。笑',
@@ -722,7 +722,7 @@ AdminsJoke.create!(
   page: 5,
 )
 
-AdminsJoke.create!(
+JokeTemplete.create!(
   genre_id: 4,
   introduction: "ボケ　　：大変です！犯人が我々に気付いて車に乗って逃走しています。\n\n" + "ツッコミ：何！？よし、タクシーに乗るぞ！すいません！あの車を追ってください！",
   funny_man: 'ボケ　　：山さん！ここベンチです！',
@@ -730,7 +730,7 @@ AdminsJoke.create!(
   page: 5,
 )
 
-AdminsJoke.create!(
+JokeTemplete.create!(
   genre_id: 4,
   introduction: "ボケ　　：大変です！犯人が我々に気付いて車に乗って逃走しています。\n\n" + "ツッコミ：何！？よし、タクシーに乗るぞ！すいません！あの車を追ってください！",
   funny_man: 'ボケ　　：犯人はキッザニアの方に逃走しています！',
@@ -738,7 +738,7 @@ AdminsJoke.create!(
   page: 5,
 )
 
-AdminsJoke.create!(
+JokeTemplete.create!(
   genre_id: 4,
   introduction: "ツッコミ：そしたら犯人を追い詰める訳や！\n\n" + "ツッコミ：犯人に告ぐ！お前はもう完全に包囲されている！",
   funny_man: 'ボケ　　：そうだ！降服はやめて抵抗しろ！',
@@ -746,7 +746,7 @@ AdminsJoke.create!(
   page: 6,
 )
 
-AdminsJoke.create!(
+JokeTemplete.create!(
   genre_id: 4,
   introduction: "ツッコミ：そしたら犯人を追い詰める訳や！\n\n" + "ツッコミ：犯人に告ぐ！お前はもう完全に包囲されている！",
   funny_man: 'ボケ　　：犯人！白髪増えてきたな！',
@@ -754,7 +754,7 @@ AdminsJoke.create!(
   page: 6,
 )
 
-AdminsJoke.create!(
+JokeTemplete.create!(
   genre_id: 4,
   introduction: "ツッコミ：そしたら犯人を追い詰める訳や！\n\n" + "ツッコミ：犯人に告ぐ！お前はもう完全に包囲されている！",
   funny_man: 'ボケ　　：犯人！しかしこの包囲網はな！北側が手薄だ！',
@@ -762,7 +762,7 @@ AdminsJoke.create!(
   page: 6,
 )
 
-AdminsJoke.create!(
+JokeTemplete.create!(
   genre_id: 4,
   introduction: 'ツッコミ：犯人！今日はな！お前に会いたいって言ってくれた人を連れてきたぞ！',
   funny_man: 'ボケ　　：お前のひぃばぁちゃん連れて来たぞ！',
@@ -770,7 +770,7 @@ AdminsJoke.create!(
   page: 7,
 )
 
-AdminsJoke.create!(
+JokeTemplete.create!(
   genre_id: 4,
   introduction: 'ツッコミ：犯人！今日はな！お前に会いたいって言ってくれた人を連れてきたぞ！',
   funny_man: 'ボケ　　：犯人！お前を説得するためにな、幼稚園の時の同級生連れてきたぞ！',
@@ -778,7 +778,7 @@ AdminsJoke.create!(
   page: 7,
 )
 
-AdminsJoke.create!(
+JokeTemplete.create!(
   genre_id: 4,
   introduction: 'ツッコミ：犯人！今日はな！お前に会いたいって言ってくれた人を連れてきたぞ！',
   funny_man: 'ボケ　　：しかし、呼んでも誰も来てくれなかった！',
@@ -786,7 +786,7 @@ AdminsJoke.create!(
   page: 7,
 )
 
-AdminsJoke.create!(
+JokeTemplete.create!(
   genre_id: 4,
   introduction: "ツッコミ：そしたら最後に興奮した犯人が、お前に銃を撃ってくる。それを俺が守るシーンや。\n\n" + "ツッコミ：あぶな〜い！",
   funny_man: 'ボケ　　：ぼふっ（銃を撃たれる）',
@@ -794,7 +794,7 @@ AdminsJoke.create!(
   page: 8,
 )
 
-AdminsJoke.create!(
+JokeTemplete.create!(
   genre_id: 4,
   introduction: "ツッコミ：そしたら最後に興奮した犯人が、お前に銃を撃ってくる。それを俺が守るシーンや。\n\n" + "ツッコミ：あぶな〜い！",
   funny_man: 'ボケ　　：（ツッコミの人を思いっきり盾にする）',
@@ -802,7 +802,7 @@ AdminsJoke.create!(
   page: 8,
 )
 
-AdminsJoke.create!(
+JokeTemplete.create!(
   genre_id: 4,
   introduction: "ツッコミ：そしたら最後に興奮した犯人が、お前に銃を撃ってくる。それを俺が守るシーンや。\n\n" + "ツッコミ：あぶな〜い！",
   funny_man: 'ボケ　　：（自撮りする）',

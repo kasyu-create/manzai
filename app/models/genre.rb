@@ -1,5 +1,5 @@
 class Genre < ApplicationRecord
-  has_many :admins_jokes
+  has_many :joke_templetes
 
   validates :category, {presence: true}
   validates :name, {presence: true}

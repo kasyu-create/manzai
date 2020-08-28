@@ -1,4 +1,4 @@
-class UsersJoke < ApplicationRecord
+class JokeTmp < ApplicationRecord
   belongs_to :joke_books, optional: true
   belongs_to :user
 

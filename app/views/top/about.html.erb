@@ -44,7 +44,7 @@
 
         <tr>
           <td><%= genres.id %></td>
-          <td><%= link_to genres.name, users_joke_path(genres.id) %></td>
+          <td><%= link_to genres.name, joke_tmp_path(genres.id) %></td>
         </tr>
 
           <% end %>
@@ -57,7 +57,7 @@
 <div class="row">
   <div class="col-xs-12">
 
-    <h3>漫才をご自身で１から作りたいという方は<%= link_to 'こちら！', new_users_joke_path %></h3>
+    <h3>漫才をご自身で１から作りたいという方は<%= link_to 'こちら！', new_joke_tmp_path %></h3>
 
   </div>
 </div>

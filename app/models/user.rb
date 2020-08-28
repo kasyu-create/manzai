@@ -5,7 +5,7 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :validatable
 
   has_many :joke_books
-  has_many :users_jokes
+  has_many :joke_tmps
   has_many :inquiry
 
   def active_for_authentication?
