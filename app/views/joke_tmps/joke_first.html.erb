@@ -1,0 +1,45 @@
+<div class="row">
+  <div class="col-xs-4">
+      <h2>場面1</h2><br>
+
+      <!-- <div class="joketemplete-new-form">
+
+        -->
+  </div>
+
+      <br><br><br><br>
+      <div class="col-xs-8">
+
+        <br>
+        <p style="font-size: 20px;">下記にボケの選択肢があります！ボタンを選択して次へを押してください！</p>
+        <br>
+        <%= form_with(model: @joketmp ,url: joke_tmps_joke_middle_path(joke_book_id: @joke_book_id, genre_id: @genre_id, conto_page: @conto_page),method: :post, local: true) do |f| %>
+
+        <%=f.hidden_field :introduction, value: @joketemplete.last.introduction %>
+        <div style="font-size: 20px;"><%= sanitize(simple_format(@joketemplete.last.introduction)) %></div>
+
+
+        <% @joketemplete.each_with_index do |joketemplete, index| %>
+
+
+        <%=f.hidden_field :joke_book_id, value:@joke_book_id %>
+
+        <div class="joke_select" style="margin-top: 55px;">
+
+
+         <%=f.radio_button :joke_tmp, joketemplete.funny_man + "," + joketemplete.straight_man,id:"joke_tmp_#{index}" %>
+
+         <p style="font-size: 20px;"><%=f.label :joke_tmp,"#{joketemplete.funny_man}<br><br>#{joketemplete.straight_man}".html_safe,for:"joke_tmp_#{index}"%>
+       </div></p>
+         <br><br><br><br>
+
+
+        <% end %>
+
+        <div style="margin-top: 55px;">
+          <%= f.submit('次へ',class: 'btn btn-primary btn-lg btn-block')%>
+        </div>
+        <% end %>
+
+      </div>
+</div>

@@ -1,4 +1,4 @@
-class AdminsJoke < ApplicationRecord
+class JokeTemplete < ApplicationRecord
   belongs_to :genre
 
   validates :introduction, {presence: true}

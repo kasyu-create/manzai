@@ -2,7 +2,7 @@
   <h1>ネタ投稿</h1>
 </div>
 <br>
-<%= form_for(@joke_book, url:users_jokes_script_path) do |f| %>
+<%= form_for(@joke_book, url:joke_tmps_script_path) do |f| %>
     <div class="form-group">
         <%= f.label :name, '設定名' %>
         <%= f.text_field :name, class: 'form-control' %>

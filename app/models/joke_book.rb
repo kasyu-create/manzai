@@ -1,7 +1,7 @@
 class JokeBook < ApplicationRecord
 
   belongs_to :user
-  has_many :users_jokes
+  has_many :joke_tmps
 
   validates :name, {presence: true}
 end

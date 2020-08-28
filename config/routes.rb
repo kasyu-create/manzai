@@ -18,21 +18,21 @@ Rails.application.routes.draw do
   post 'inquiry' => 'inquirys#create'
   get 'inquiry/thanks' => 'inquirys#thanks'
   get 'about' => 'top#about'
-  post 'login' => 'users_jokes#login'
-  post 'users_jokes/script' => 'users_jokes#script'
+  post 'login' => 'joke_tmps#login'
+  post 'joke_tmps/script' => 'joke_tmps#script'
 
-  post 'users_jokes/create' => 'users_jokes#create'
-  get 'users_jokes/joke_first' => 'users_jokes#joke_first'
-  post 'users_jokes/joke_middle' => 'users_jokes#joke_middle'
-  get 'users_jokes/joke_last' => 'users_jokes#joke_last'
-  post 'users_jokes/joke_last' => 'users_jokes#create'
+  post 'joke_tmps/create' => 'joke_tmps#create'
+  get 'joke_tmps/joke_first' => 'joke_tmps#joke_first'
+  post 'joke_tmps/joke_middle' => 'joke_tmps#joke_middle'
+  get 'joke_tmps/joke_last' => 'joke_tmps#joke_last'
+  post 'joke_tmps/joke_last' => 'joke_tmps#create'
 
   resources :users, only: [:index, :edit, :update]
   get 'quit' => 'users#quit'
   patch 'users/withdraw' => 'users#withdraw'
   get 'users/joke_books/:id/:id' => 'joke_books#edit1'
   resources :joke_books, only: [:show, :index, :edit, :update, :destroy]
-  resources :users_jokes, only: [:index,  :new, :show, :edit, :update]
+  resources :joke_tmps, only: [:index,  :new, :show, :edit, :update]
 
 
 
@@ -47,9 +47,9 @@ Rails.application.routes.draw do
      root :to => 'top#top'
      resources :users, only: [:index, :show, :edit, :update]
      resources :genres, only: [:index, :create, :edit, :update, :destroy]
-     resources :admins_jokes, only: [:show, :new, :create, :edit, :update]
-     get 'plan' => 'admins_jokes#plan'
-     get 'show1/:id' => 'admins_jokes#show1'
+     resources :joke_templetes, only: [:show, :new, :create, :edit, :update]
+     get 'plan' => 'joke_templetes#plan'
+     get 'show1/:id' => 'joke_templetes#show1'
      get 'inquiry/receive' => 'inquiry#receive'# 入力画面
     end
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html

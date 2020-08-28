@@ -1,4 +1,4 @@
-class UsersJokesController < ApplicationController
+class JokeTmpsController < ApplicationController
 
   def new
     @joke_book = JokeBook.new
@@ -40,39 +40,39 @@ class UsersJokesController < ApplicationController
     @joke_book.name = @genre.name
     @joke_book.user_id = user.id
     if @joke_book.save
-      redirect_to users_jokes_joke_first_path(joke_book_id: @joke_book.id, genre_id: @genre.id)
+      redirect_to joke_tmps_joke_first_path(joke_book_id: @joke_book.id, genre_id: @genre.id)
       # ここに引数で@joke_bookでjoke_bookIDを渡せれば
     else
-      redirect_to users_jokes_path
+      redirect_to joke_tmps_path
     end
   end
 
   def joke_first
-    @usersjoke = UsersJoke.new
-    @adminsjoke = AdminsJoke.where(page: 1, genre_id: params[:genre_id])
+    @joketmp = JokeTmp.new
+    @joketemplete = JokeTemplete.where(page: 1, genre_id: params[:genre_id])
     @joke_book_id = params[:joke_book_id]
     @genre_id = params[:genre_id]
     @conto_page = 1
   end
 
   def joke_middle
-    users_joke = usersjokes(
-    params[:users_joke][:users_joke],params[:users_joke][:joke_book_id], params[:users_joke][:introduction])
-      unless users_joke.save!
-        users_jokes_path
+    joke_tmp = joketmps(
+    params[:joke_tmp][:joke_tmp],params[:joke_tmp][:joke_book_id], params[:joke_tmp][:introduction])
+      unless joke_tmp.save!
+        joke_tmps_path
       end
 
     if params[:conto_page].to_i == 7
-      @joke_book_id = params[:users_joke][:joke_book_id]
+      @joke_book_id = params[:joke_tmp][:joke_book_id]
       @genre_id = params[:genre_id]
-      redirect_to users_jokes_joke_last_path(joke_book_id: @joke_book_id, genre_id: @genre_id)
+      redirect_to joke_tmps_joke_last_path(joke_book_id: @joke_book_id, genre_id: @genre_id)
     else
       @conto_page = params[:conto_page].to_i+1
     end
 
-    @usersjoke = UsersJoke.new
-    @adminsjoke = AdminsJoke.where(page: @conto_page, genre_id: params[:genre_id])
-    @joke_book_id = params[:users_joke][:joke_book_id]
+    @joketmp = JokeTmp.new
+    @joketemplete = JokeTemplete.where(page: @conto_page, genre_id: params[:genre_id])
+    @joke_book_id = params[:joke_tmp][:joke_book_id]
     @genre_id = params[:genre_id]
   end
 
@@ -80,25 +80,25 @@ class UsersJokesController < ApplicationController
     logger.debug 'zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz'
     logger.debug request.referer
     logger.debug 'zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz'
-    @usersjoke = UsersJoke.new
-    @adminsjoke = AdminsJoke.where(page: 8, genre_id: params[:genre_id])
+    @joketmp = JokeTmp.new
+    @joketemplete = JokeTemplete.where(page: 8, genre_id: params[:genre_id])
     @genre_id = params[:genre_id]
     @joke_book_id = params[:joke_book_id]
   end
 
   def create
-    users_joke = usersjokes(
-    params[:users_joke][:users_joke],params[:users_joke][:joke_book_id], params[:users_joke][:introduction])
-     unless users_joke.save!
-      redirect_to users_jokes_joke_middle_path
+    joke_tmp = joketmps(
+    params[:joke_tmp][:joke_tmp],params[:joke_tmp][:joke_book_id], params[:joke_tmp][:introduction])
+     unless joke_tmp.save!
+      redirect_to joke_tmps_joke_middle_path
      end
-    @joke_book_id = params[:users_joke][:joke_book_id]
+    @joke_book_id = params[:joke_tmp][:joke_book_id]
 
     if request.referer.include?('joke_last')
     #シナリオテーブルにフリボケツッコミを保存する処理
-    usersjoke =   UsersJoke.where(joke_book_id: @joke_book_id)
+    joketmp =   JokeTmp.where(joke_book_id: @joke_book_id)
     contents = []
-      usersjoke.each do |ubt|
+      joketmp.each do |ubt|
        contents << ubt.introduction
        contents << ubt.funny_man
        contents << ubt.straight_man
@@ -112,7 +112,7 @@ class UsersJokesController < ApplicationController
 
 
   private
-  def users_joke_params
+  def joke_tmp_params
     params.permit(:joke_book_id, :introduction, :funny_man, :straight_man)
   end
 
@@ -124,11 +124,11 @@ class UsersJokesController < ApplicationController
     params.require(:genre).permit(:category ,:name)
   end
 
-  def usersjokes(users_joke,joke_book_id,introduction)
-    usersjoke = users_joke.split(",")
-    UsersJoke.new(
-      funny_man: usersjoke[0],
-      straight_man: usersjoke[1],
+  def joketmps(joke_tmp,joke_book_id,introduction)
+    joketmp = joke_tmp.split(",")
+    JokeTmp.new(
+      funny_man: joketmp[0],
+      straight_man: joketmp[1],
       joke_book_id: joke_book_id,
       introduction: introduction,
       user_id: current_user.id

@@ -1,6 +1,6 @@
 
 <div class="pull-right" style="text-align: right;">
-	<%= search_form_for(@search, url:admins_admins_joke_path) do |f| %>
+	<%= search_form_for(@search, url:admins_joke_templete_path) do |f| %>
 		<%= f.label :funny_man, "キーワード" %>
 		<%= f.search_field :funny_man_cont %>
 		<%= f.submit %>
@@ -12,7 +12,7 @@
       <h2>ボケ・ツッコミ一覧</h2>
 
   <div class="text-right">
-      <%= link_to "新規登録" ,new_admins_admins_joke_path, class:"btn btn-lg btn-primary" %>
+      <%= link_to "新規登録" ,new_admins_joke_templete_path, class:"btn btn-lg btn-primary" %>
   </div>
 	</div>
 </div>
@@ -23,7 +23,7 @@
       <table class="table">
         <thead>
           <tr>
-            <th>ストーリー名</th>
+            <th>番号</th>
 						<th>フリ</th>
             <th>ボケ</th>
             <th>ツッコミ</th>
@@ -31,17 +31,17 @@
         </thead>
 
         <tbody>
-          <% @admins_jokes.each do |admins_joke| %>
-					<% if @genre.id == admins_joke.genre.id %>
+          <% @joke_templetes.each do |joke_templete| %>
+					<% if @genre.id == joke_templete.genre.id %>
             <tr>
-              <td><%= link_to admins_joke.id,admins_path(admins_joke)  %></td>
-							<td><%= admins_joke.introduction %></td>
-              <td><%= admins_joke.funny_man %></td>
-              <td><%= admins_joke.straight_man %></td>
+              <td><%= link_to joke_templete.id,admins_path(joke_templete)  %></td>
+							<td><%= joke_templete.introduction %></td>
+              <td><%= joke_templete.funny_man %></td>
+              <td><%= joke_templete.straight_man %></td>
             </tr>
             <% end %>
 						<% end %>
-            <%= paginate @admins_jokes %>
+            <%= paginate @joke_templetes %>
         </tbody>
       </table>
     </div>
