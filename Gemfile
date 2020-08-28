@@ -84,3 +84,6 @@ end
 gem 'execjs'
 gem 'enum_help'
 gem 'roo'
+
+gem 'devise-i18n'
+gem 'devise-i18n-views'
