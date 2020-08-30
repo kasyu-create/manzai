@@ -11,9 +11,9 @@ class JokeTmpsController < ApplicationController
     end
     sign_in user
 
-    @joke_book = JokeBook.new(joke_book_params)
-    @joke_book.user_id = current_user.id
-    if @joke_book.save
+    joke_book = JokeBook.new(joke_book_params)
+    joke_book.user_id = current_user.id
+    if joke_book.save
       redirect_to joke_books_path
     else
       redirect_to root_path
@@ -35,12 +35,12 @@ class JokeTmpsController < ApplicationController
     end
     sign_in user
 
-    @genre = Genre.find(params[:id])
-    @joke_book = JokeBook.new
-    @joke_book.name = @genre.name
-    @joke_book.user_id = user.id
-    if @joke_book.save
-      redirect_to joke_tmps_joke_first_path(joke_book_id: @joke_book.id, genre_id: @genre.id)
+    genre = Genre.find(params[:id])
+    joke_book = JokeBook.new
+    joke_book.name = genre.name
+    joke_book.user_id = user.id
+    if joke_book.save
+      redirect_to joke_tmps_joke_first_path(joke_book_id: joke_book.id, genre_id: genre.id)
       # ここに引数で@joke_bookでjoke_bookIDを渡せれば
     else
       redirect_to joke_tmps_path
