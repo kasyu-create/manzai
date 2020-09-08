@@ -2,13 +2,14 @@
   <div class="col-xs-10 col-xs-offset-1">
     <h2>台本編集</h2><br>
   </div>
+  <div class="col-xs-10 col-xs-offset-1">
       <%= form_with(model:@joke_books, url:joke_book_path ,method: :PATCH) do |f| %>
 
-          <%= f.label :joke %>
+          <%= f.label :"漫才" %>
           <%#= f.text_area_tag :furiboketukkomi, :size => "80x30", value: @joke_books.furiboketukkomi.html_safe %>
-<%= text_area_tag 'joke', @joke_books.joke.gsub(/<br>/,"\n") ,:size => "80x30" %>
+      <%= text_area_tag 'joke', @joke_books.joke.gsub(/<br>/,"\n") ,:size => "80x30" %>
 
-        <%= f.submit "変更を保存する" ,class: "btn btn-primary" %>
-  <% end %>
-
+      <%= f.submit "変更を保存する" ,class: "btn btn-primary" %>
+      <% end %>
+  </div>
 </div>
