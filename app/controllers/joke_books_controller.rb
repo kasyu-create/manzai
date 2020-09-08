@@ -20,7 +20,7 @@ before_action :baria_user, only: [:edit, :destroy, :update]
   def update
     @joke_books = JokeBook.find(params[:id])
     if @joke_books.update(joke_book_params)
-      redirect_to joke_books_path
+      redirect_to joke_book_path(@joke_books)
     else
       render "edit"
     end
